@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Simple Map</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+    <style>
+      html, body, #map {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://js.arcgis.com/3.23/"></script>
+    <script>
+      var map;
+    function scheduleJob() {  
+      require(["esri/map","dojo/dom","dojo/on","esri/geometry/Point","dojo/domReady!"], function(Map,dom,on,Point) {
+          on(dom.byId("scheduleJobBtns"), "click", scheduleJobs);
+          map = new Map("map", {
+          basemap: "topo",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
+          center: [-122.45, 37.75], // longitude, latitude
+          zoom: 13
+        });
+     function scheduleJobs() {     
+         var myZoom = dom.byId("inputTitle").value;
+         var myjd = dom.byId("jindu").value;   
+         var mywd = dom.byId("weidu").value;    
+         var myBasemap = dom.byId("fanwei").value;
+         var myPoint = new Point(myjd, mywd);
+         map.setZoom(myZoom);
+         map.centerAt(myPoint);
+         map.setBasemap(myBasemap);
+         }
+      });
+        }
+    </script>
+  </head>
+
+  <body >
+    <div id="map">
+	    <input type="button" id="scheduleJobBtn" value="显示地图" class="submitButton" onclick="scheduleJob()" /> 
+	</div>
+    <input id="inputTitle" type="text" value="" placeholder="请输入缩放级别" />
+    <input id="jindu" type="text" value="" placeholder="请输入地图范围经度" />
+    <input id="weidu" type="text" value="" placeholder="请输入地图范围纬度" />
+    <input id="fanwei" type="text" value="" placeholder="请输入地图底图" />
+    <input type="button" id="scheduleJobBtns" value="显示对应范围" class="submitButton" /> 
+  </body>
+</html>
