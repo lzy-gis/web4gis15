@@ -1,0 +1,188 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Simple Map</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+	 <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/1.6/js/dojo/dijit/themes/tundra/tundra.css">
+    <style>
+      html, body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	  .axis path,
+    .axis line{
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+        #map
+        {
+            width: 600px;
+            height:600px;
+        }
+        #map2
+        {
+            position: absolute;
+            width: 600px;
+            height:600px;
+            left: 600px;
+            top: 44px;
+        }
+
+.axis text {
+	font-family: sans-serif;
+	font-size: 11px;
+}
+    </style>
+	    <select id ="basemapsec" title="地图风格" >
+        <option value="topo">"topo"</option>
+        <option value="satellite">"satellite"</option>
+        <option value="hybrid">"hybrid"</option>
+        <option value="gray">"gray"</option>
+        <option value="oceans">"oceans"</option>
+        <option value="osm">"osm"</option>
+        <option value="national-geographic">"national-geographic"</option>
+    </select>
+    <input type='button' value='切换底图' onClick="choose_basemap()"/>
+    <label for="dashboardFieldNamesCombo">当前图层比例尺为:</label> 
+    <input type="text" id="inputFileItemId" style="width:275px" />
+    <label for="dashboardField">当前鼠标所处坐标为:</label> 
+    <input type="text" id="inputFile" style="width:275px" />
+    <script src="https://js.arcgis.com/3.23/"></script>
+	<!-- <script src="web.js"></script> -->
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>  
+    <script>
+      var map;
+      var scale;
+	  var myid;
+	  var tiled;
+      var dynamicMapServiceLayer,map,visible = [];
+	  var items;
+      require(["esri/map", "esri/layers/ArcGISDynamicMapServiceLayer", "esri/layers/ArcGISTiledMapServiceLayer", "esri/layers/FeatureLayer", "esri/geometry/scaleUtils","dojo/on", "dojo/domReady!"], function(Map, ArcGISDynamicMapServiceLayer,ArcGISTiledMapServiceLayer,FeatureLayer, scaleUtils,on) {
+        map = new Map("map", {
+          basemap: "topo",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
+          center: [-122.45, 37.75], // longitude, latitude
+          zoom: 8
+        });
+          map2 = new Map("map2", {
+          basemap: "gray",  
+          center: [-122.45, 37.75], // longitude, latitude
+          zoom: 8
+        });
+		   tiled = new ArcGISTiledMapServiceLayer("https://services.arcgisonline.com/arcgis/rest/services/Specialty/Soil_Survey_Map/MapServer",{
+		   id:"kid4"
+		   });
+
+           map.on("load",function(event){
+           scale = scaleUtils.getScale(map);
+           document.getElementById("inputFileItemId").value = scale;
+        });
+          map.on("extent-change",function(event){
+           scale = scaleUtils.getScale(map);
+           document.getElementById("inputFileItemId").value = scale;
+		    if(map2)
+              {
+                  map2.setExtent(event.extent);
+              }
+        });
+		
+             map.on("mouse-move",function(e){
+             document.getElementById("inputFile").value = e.x + ","+ e.y;
+			 if(dynamicMapServiceLayer.visible==true)
+			 {
+			 dojo.byId(map.id+'_kid3').style.clip="rect(0px,"+event.clientX +"px,500px,0px)";
+			 }
+			  if(tiled.visible==true)
+			 {
+			 dojo.byId(map.id+'_kid4').style.clip="rect(0px,"+event.clientX +"px,500px,0px)";
+			 }
+        });
+		   dynamicMapServiceLayer = new ArcGISDynamicMapServiceLayer(
+                "http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StatesCitiesRivers_USA/MapServer",{
+				 id : "kid3"
+           });
+            if (dynamicMapServiceLayer.loaded) {        
+                buildLayerList(dynamicMapServiceLayer);              		   
+            }else{
+                dojo.connect(dynamicMapServiceLayer,"onLoad",buildLayerList);		
+            }  
+			dynamicMapServiceLayer.on("load",function(e){
+		    myid = e.layer.id;
+		    alert(myid);	
+        });
+      });        
+			function buildLayerList(layer) {
+            var infos = layer.layerInfos, info;
+             items = [];
+            for (var i=0,j=infos.length;i<j;i++) {
+                info = infos[i];
+                if (info.defaultVisibility) {
+                    visible.push(info.id);
+                }
+                items[i] = "<input type='checkbox' class='list_item' checked='" + (info.defaultVisibility ? "checked" : "") + "' id='" + info.id +"' onclick='updateLayerVisibility();'/><label for='" +info.id+ "'>" +info.name+ "</label>";          
+            }
+            dojo.byId("layer_list").innerHTML = items.join();
+            
+            //layer.setVisibleLayers(visible);
+            map.addLayer(layer);
+        
+        }
+		
+		
+	        function updateLayerVisibility() {
+            var inputs = dojo.query(".list_item"), input;
+            visible = [];
+            for (var i=0,j=inputs.length;i<j;i++) {
+                if(inputs[i].checked) {
+                    visible.push(inputs[i].id);
+                }           
+            }
+			 if(dynamicMapServiceLayer.visible==true)
+			 {
+			  dynamicMapServiceLayer.setVisibleLayers(visible);
+			 }
+			  if(tiled.visible==true)
+			 {
+			 visible.visible=false;
+			 }
+       
+        }
+		 function deleteLayer() {
+          map.removeLayer(dynamicMapServiceLayer);
+		  map.removeLayer(tiled);
+		  dojo.byId("layer_list").innerHTML = "";
+        }
+		 function addLayer() {
+		  dynamicMapServiceLayer.visible=true;
+		   tiled.visible=false;
+           buildLayerList(dynamicMapServiceLayer); 
+        }
+		function addTilelyer() {
+		  dynamicMapServiceLayer.visible=false;
+		  tiled.visible=true;
+           buildLayerList(tiled); 
+		
+        }
+		
+	    function choose_basemap() {
+             var objs = document.getElementById("basemapsec");
+             var index = objs.selectedIndex;
+             basemap1 = objs.options[index].value;
+             map.setBasemap(basemap1);
+         }
+
+    </script>
+  </head>
+  <body>
+	  <br />Layer List: <span id="layer_list"></span>
+	  <button id="delyer" onclick="deleteLayer()" >删除图层</button>
+	  <button id="adlyer" onclick="addLayer()" >添加动态图层</button>
+	   <button id="adTilelyer" onclick="addTilelyer()" >添加瓦片图层</button>
+	  <br />
+    <div id="map"></div>
+    <div id="map2"></div>
+	<!-- <div id="kid3"></div> -->
+  </body>
+</html>
