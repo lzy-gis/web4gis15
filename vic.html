@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Simple Map</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.13/esri/css/esri.css">
+    <style>
+      html, body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	    #map  {
+            width: 700px;
+            height:600px;
+			top: 0px;
+        }
+	    #map2
+        {
+            position: absolute;
+            width: 700px;
+            height:600px;
+            left: 700px;
+            top: 0px;
+        }
+    </style>
+    <script src="https://js.arcgis.com/3.13/"></script>
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script>
+      var map;
+      require(["esri/map",  
+            "esri/layers/ArcGISTiledMapServiceLayer",  
+            "esri/layers/GraphicsLayer",  
+            "esri/symbols/SimpleMarkerSymbol",  
+            "esri/symbols/SimpleLineSymbol",  
+			"esri/symbols/SimpleFillSymbol", 
+            "esri/renderers/SimpleRenderer",  
+            "esri/Color",  
+            "esri/geometry/Point",  
+            "esri/graphic",  
+            "dojo/domReady!"  ], function(Map,  
+            Tiled,  
+            GraphicsLayer,  
+            SimpleMarkerSymbol,  
+            SimpleLineSymbol, 
+            SimpleFillSymbol, 			
+            SimpleRenderer,  
+            Color, Point, Graphic) {
+        map = new Map("map", {
+            basemap: "gray",
+            center: [119, 30],
+            zoom: 4
+    });
+        map2 = new Map("map2", {
+          basemap: "gray",  
+          center: [110,30], // longitude, latitude
+          zoom: 4
+        });	
+		    var mk;
+			var sk;
+            var mLayer = new GraphicsLayer();  
+			var sgLayer = new GraphicsLayer();  
+			var gLayer = new GraphicsLayer(); 
+            <!-- map.addLayer(gLayer);   -->
+			map2.addLayer(mLayer); 
+            map2.addLayer(sgLayer);			
+			map.addLayer(gLayer); 
+            gLayer.on("click",function(feature){  
+                console.log(feature);  
+            });  
+            map.on("load",function(){  
+                $.get("https://qqq807111690.github.io/web4gis15/json3.json",null,function(result){  
+                    var features = result.features;  
+                    for(var i=0;i<features.length;i++){  
+                        var feature = features[i]; 
+						
+                        var graphic  = new Graphic(feature);  
+						var sgraphic  = new Graphic(feature);  
+						var mgraphic  = new Graphic(feature); 
+                        gLayer.add(graphic);  
+						sgLayer.add(sgraphic);
+                        mLayer.add(mgraphic);   						
+						 <!-- mk = new SimpleRenderer(new SimpleFillSymbol().setOutline(new SimpleLineSymbol().setWidth(0.1).setColor(new Color([128,128,128]))));	 -->
+                    }
+		    mk = new SimpleRenderer(new SimpleFillSymbol().setOutline(new SimpleLineSymbol().setWidth(0.1).setColor(new Color([128,128,128]))));
+			smk = new SimpleRenderer(new SimpleFillSymbol().setOutline(new SimpleLineSymbol().setWidth(0.1).setColor(new Color([128,128,128]))));
+		    mk.setColorInfo({
+            field: "POPU",
+            minDataValue: 0,
+            maxDataValue: 10000,
+            colors: [
+              new Color([255, 255, 255]),
+              new Color([127, 127, 0])
+            ]
+          });
+		  var orangeRed = new Color([238, 69, 0, 0.5]); 
+		  sk = new SimpleRenderer(new SimpleMarkerSymbol("solid", 15, null, orangeRed));
+			  sk.setSizeInfo({
+              field:"POPU",
+              minSize:3,
+              maxSize:50,
+              minDataValue:0,
+              maxDataValue:12000
+               });
+					gLayer.renderer= mk;
+					sgLayer.renderer= sk;
+					mLayer.renderer= smk;
+                });  
+				
+            });	
+			map.resize();
+			map2.resize();
+        });  
+    </script>
+  </head>
+
+  <body>
+    <div id="map">
+   <div id="map2">
+  </body>
+</html>
+ 

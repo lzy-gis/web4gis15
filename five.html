@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>CSVLayer sample</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.23/esri/css/esri.css">
+    <style>
+      html, body{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	  	 #map  {
+            width: 700px;
+            height:600px;
+			top: 0px;
+        }
+	    #map2
+        {
+            position: absolute;
+            width: 700px;
+            height:600px;
+            left: 700px;
+            top: 0px;
+        }
+      body {
+        background-color: #FFF;
+        overflow: hidden;
+        font-family: "Trebuchet MS";
+      }
+    </style>
+    <script src="https://js.arcgis.com/3.23/"></script>
+    <script>
+      var map, csv;
+
+      require([
+        "esri/map", 
+        "esri/layers/CSVLayer",
+        "esri/Color",
+        "esri/symbols/SimpleMarkerSymbol",
+        "esri/renderers/SimpleRenderer",
+		"esri/renderers/ClassBreaksRenderer",
+		"esri/renderers/HeatmapRenderer",
+        "esri/InfoTemplate",
+        "esri/config",
+        "dojo/domReady!"
+      ], function(
+        Map, CSVLayer, Color, SimpleMarkerSymbol, SimpleRenderer, ClassBreaksRenderer,HeatmapRenderer,InfoTemplate, esriConfig
+      ) {
+        
+        // Use CORS
+		var symbol;
+        esriConfig.defaults.io.corsEnabledServers.push("qqq807111690.github.io"); // supports CORS
+        map = new Map("map", {
+          basemap: "gray",
+          center: [ -60, -10 ],
+          zoom: 2 
+        });
+		  map2 = new Map("map2", {
+          basemap: "gray",
+          center: [ -60, -10 ],
+          zoom: 2 
+        });
+        csv = new CSVLayer("https://qqq807111690.github.io/web4gis15/all_month2.csv", {
+          copyright: "USGS.gov"
+        });
+		csv2 = new CSVLayer("https://qqq807111690.github.io/web4gis15/all_month2.csv", {
+          copyright: "USGS.gov"
+        });
+		var heatmapRenderer = new HeatmapRenderer();
+	    csv.setRenderer(heatmapRenderer);
+		var orangeRed = new Color([0, 0, 150, 0.5]); 
+	    symbol = new SimpleMarkerSymbol(new SimpleMarkerSymbol("solid", 8, null, orangeRed));
+		symbol2 = new SimpleMarkerSymbol(new SimpleMarkerSymbol("solid", 16, null, orangeRed));
+		symbol3 = new SimpleMarkerSymbol(new SimpleMarkerSymbol("solid", 24, null, orangeRed));
+		symbol4 = new SimpleMarkerSymbol(new SimpleMarkerSymbol("solid", 32, null, orangeRed));
+		symbol5 = new SimpleMarkerSymbol(new SimpleMarkerSymbol("solid", 40, null, orangeRed));	
+		var renderer = new ClassBreaksRenderer(symbol, "depth");
+        renderer.addBreak(0, 20,  symbol);
+        renderer.addBreak(20, 40, symbol2);
+        renderer.addBreak(40, 60, symbol3);
+        renderer.addBreak(60, 80, symbol4);
+        renderer.addBreak(100, Infinity, symbol5);
+		csv2.setRenderer(renderer);
+		map.addLayer(csv); 
+		map2.addLayer(csv2); 
+      });
+
+    </script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+	<div id="map2"></div>
+  </body>
+</html>
