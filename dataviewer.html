@@ -1,0 +1,353 @@
+<!DOCTYPE html>  
+<html>  
+  
+    <head>  
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+		#allmap{width:100%;height:500px;margin-left:10px;margin-right:10px;}
+		p{margin-left:5px; font-size:14px;}
+		font{margin-left:10px; }
+		#qhmap,qhmap2{margin-left:10px;}
+		#mytable,#map{margin-left:8px;}
+	</style>
+	<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=vaA2en4hVGSqKjtIRPG0lVmLV919uDAD"></script>
+	<title>抓取数据列表</title> 
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://qqq807111690.github.io/web4gis15/bootstrap-table.min.css"> 
+        <link rel="stylesheet" href="https://js.arcgis.com/3.24/esri/css/esri.css">		
+        <!-- <link rel="stylesheet" href="bootstrap_table/css/bootstrap-editable.css">   -->
+        <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <!-- <script src="bootstrap_table/js/vue.min.js"></script>   -->
+        <!-- <script src="https://qqq807111690.github.io/web4gis15//bootstrap-table.min.js"></script>   -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+		 <script src="https://js.arcgis.com/3.24/"></script>
+        <!-- <script src="bootstrap_table/js/bootstrap-editable.js"></script>   -->
+        <!-- <script src="bootstrap_table/js/bootstrap-table-editable.js"></script>   -->
+        <!-- <meta charset="UTF-8">   -->
+		<meta charset="UTF-8"> 
+         
+    </head>  
+  
+    <body>  
+	 <fieldset>
+	 <!-- <legend color="red">百度地图数据展示：</legend> -->
+	<font size="5" color="black" >  百度地图数据：</font>
+    <div id="allmap"></div>
+	<!-- <p>底图样式可通过<a href='/custom/' target="_blank">个性化在线编辑器</a>编辑获取</p> -->
+	<button class="btn btn-success" id="qhmap" onclick="theLocation()">道路抓取</button>  
+	<button class="btn btn-success" id="qhmap2" onclick="theLocation2()">建筑物抓取</button>  
+    </fieldset>
+	<label for="uname"></label>
+	
+	 <!-- <legend color="red">新闻数据展示：</legend> -->
+        <div class="container-fluid"> 
+			<font size="5" color="black">新闻数据：</font>
+            <div class="row" id = "mytable">  
+                <table id="test-table"></table>  
+            </div>  
+        </div> 
+	 <font size="5" color="black">OSM地图数据：</font>
+	 <div id="map"></div>
+    </body>  
+    <script>  
+	var map = new BMap.Map('allmap');
+	map.centerAndZoom(new BMap.Point(120.209761,30.249588), 16);
+	  
+	map.addControl(new BMap.NavigationControl());        // 添加平移缩放控件
+	map.addControl(new BMap.ScaleControl());             // 添加比例尺控件
+	map.addControl(new BMap.OverviewMapControl());       //添加缩略地图控件
+	map.enableScrollWheelZoom();                         //启用滚轮放大缩小
+	map.disable3DBuilding();
+	//个性化在线编辑器地址：http://lbsyun.baidu.com/custom/
+	  var styleJson = [
+          {
+                    "featureType": "manmade",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "poilabel",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "background",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "highway",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "subway",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "railway",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "arterial",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#ffff00ff"
+                    }
+          },
+          {
+                    "featureType": "local",
+                    "elementType": "geometry.stroke",
+                    "stylers": {
+                              "color": "#0000ffff"
+                    }
+          },
+          {
+                    "featureType": "administrative",
+                    "elementType": "all",
+                    "stylers": {}
+          }
+]
+	  var styleJson2 = [
+          {
+                    "featureType": "highway",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "arterial",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#000000ff",
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "local",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#000000ff",
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "railway",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#000000ff",
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "green",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#e69138ff",
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "manmade",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#00ff00ff",
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#3d85c6ff",
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "poilabel",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "land",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "building",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#e69138ff"
+                    }
+          },
+          {
+                    "featureType": "subway",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          }
+]
+	map.setMapStyle({styleJson:styleJson});
+		function theLocation(){
+		map.setMapStyle({styleJson:styleJson});
+	}
+		function theLocation2(){
+		map.setMapStyle({styleJson:styleJson2});
+	}
+        $("#test-table").bootstrapTable(testFunc());  
+  
+        function testFunc(value) {  
+            var test = {  
+                toolbar: '#btn-action', //工具按钮用哪个容器  
+                striped: true, //设置为 true 会有隔行变色效果  
+                pagination: true, //设置为 true 会在表格底部显示分页条  
+                paginationLoop: false, //设置为 true 启用分页条无限循环的功能。无效果  
+                pageSize: 5, //如果设置了分页，页面数据条数  
+                cache: true,  
+                search: true, //是否启用搜索框  
+                //          showToggle:true, //是否显示 切换试图（table/card）按钮  
+                showPaginationSwitch: false, //是否显示 数据条数选择框。无效果  
+                //          checkboxHeader:true, //设置false 将在列头隐藏check-all checkbox .  
+                uniqueId: "id",  
+                //          searchText:"搜索", //初始化搜索文字  
+                selectItemName: "id",  
+                //          showHeader:true, //是否显示列头  
+                //          showFooter:false,//是否显示列脚  
+                showRefresh: true, //是否显示 刷新按钮  
+                showColumns: true, //是否显示 内容列下拉框  
+                //          sortable: true,      //是否启用排序  
+                sortOrder: "asc", //排序方式  
+                sortName: "id", //需要排序的字段  
+  
+                //          clickToSelect:false,//设置true 将在点击行时，自动选择rediobox 和 checkbox  
+                columns: [{  
+                        field: 'id',  
+                        title: 'ID',  
+                        sortable: true,  
+				        halign:"center",
+						valign:"middle",
+						<!-- rowspan: 2, -->
+                        formatter: function(val, row, index) {  
+                            return index + 1;  
+                        }  
+                    }, {  
+                        field: 'title',  
+                        title: '标题',
+						halign:"center",
+						valign:"middle",
+						width: '200px',
+						<!-- rowspan: 2 -->
+						
+						
+                    },  
+                    {  
+                        field: 'time',  
+                        title: '时间',
+                      	halign:"center",
+						valign:"middle",
+					    width: '110px',	
+                        <!-- rowspan: 2					 -->
+                    },  
+					{  
+                        field: 'origin',  
+                        title: '来源' ,
+						halign:"center",
+						valign:"middle",
+						width: '150px',	
+						<!-- rowspan: 2 -->
+                        				
+                    }, 
+					{  
+                        field: 'author',  
+                        title: '作者',
+                       	width: '110px',	
+                        halign:"center",	
+                        <!-- align:	"center", -->
+                        <!-- falign:	"center",	 -->
+                        valign:"middle"						
+                    }, 
+					{  
+                        field: 'article',  
+                        title: '正文',
+						halign:"center",
+						valign:"middle"
+						
+						
+                    }, 
+                ],  
+            }  
+            return test;  
+        };  
+		var data = [];
+      
+		$.get("https://qqq807111690.github.io/web4gis15/aa2.csv",null,function(result){  
+                <!-- reader.onload = function(f) {   -->
+                    //                  var result = document.getElementById("result");  
+                    //显示文件 
+                    var relArr = result.split(/\n/);  
+                    if(!$.isEmptyObject(relArr) && relArr.length > 1) {  
+                        for(var key = 1, len = relArr.length; key < len; key++) {  
+                            var values = relArr[key];  
+                            <!-- if(regp.test(values)) {   -->
+                                <!-- alert("文件内容中有英文逗号，麻烦修改后再上传，含有英文逗号的内容是：" + values);   -->
+                                <!-- return;   -->
+                            <!-- }   -->
+                            if(!$.isEmptyObject(values)) {  
+                                var obj = {};  
+                                var objArr = values.split(",");  
+                                obj["title"] = objArr[0];  
+                                obj["time"] = objArr[1]; 
+								obj["origin"] = objArr[2]; 
+								obj["author"] = objArr[3]; 
+								obj["article"] = objArr[4]; 
+                                data.push(obj);  
+                            }  
+                        }  
+  
+                    }  
+                    console.log(data);  
+                    $("#test-table").bootstrapTable("load", data);  
+                <!-- }   -->
+              })
+     var osmmap;
+       
+      require(["esri/map", "dojo/domReady!"], function(Map) {
+        osmmap = new Map("map", {
+          basemap: "osm",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
+          center: [120.209761,30.249588], // longitude, latitude
+          zoom: 16
+        });
+      });
+    </script>  
+  
+</html>  
