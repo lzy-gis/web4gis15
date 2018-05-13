@@ -1,0 +1,310 @@
+<!DOCTYPE html>  
+<html>  
+  
+    <head>  
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html {width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+
+#header {
+    background-color:rgb(150,130,150);
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav1 {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:500px;
+    width:10%;
+    float:left;
+    padding:5px;	      
+}
+#nav2 {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:500px;
+    width:10%;
+    float:right;
+    padding:5px;	      
+}
+#section {
+    height:500px;
+    width:80%;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:rgb(150,130,150);
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+
+	<title>抓取数据列表</title> 
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://qqq807111690.github.io/web4gis15/bootstrap-table.min.css"> 
+        <link rel="stylesheet" href="https://js.arcgis.com/3.24/esri/css/esri.css">		
+        <!-- <link rel="stylesheet" href="bootstrap_table/css/bootstrap-editable.css">   -->
+        <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <!-- <script src="bootstrap_table/js/vue.min.js"></script>   -->
+        <!-- <script src="https://qqq807111690.github.io/web4gis15//bootstrap-table.min.js"></script>   -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+		 <script src="https://js.arcgis.com/3.24/"></script>
+        <!-- <script src="bootstrap_table/js/bootstrap-editable.js"></script>   -->
+        <!-- <script src="bootstrap_table/js/bootstrap-table-editable.js"></script>   -->
+        <!-- <meta charset="UTF-8">   -->
+		<meta charset="UTF-8"> 
+         
+    </head>  
+  
+    <body>  
+	<div id="header">
+<h1>基于多源大数据的基础测绘要素变化探测分析系统</h1>
+</div>
+
+<div id="nav1">
+    <!-- <img src="image/search1.jpg" height="80px" width="120px"/> -->
+    <input type="button" style="background:rgb(162,205,90)" id="btnhtml1" value="多源可视化" onclick="Visualization1()"/>
+    <br><br>
+    <!-- <img src="image/vis.jpg" height="80px" width="120px"/> -->
+    <input type="button" style="background:rgb(162,205,90)" id="btnhtml2" value="数据抓取列表" onclick="Visualization2()"/><br><br>
+    <!-- <img src="image/zj.jpg" height="80px" width="120px"/> -->
+    <input type="button" style="background:rgb(162,205,90)" id="btnhtml2" value="四屏联动显示" onclick="Visualization3()"/><br><br>
+</div>
+<div id="nav2">
+    要素类别：<br>
+            <select id="selectstyle">
+					<option value="0">dark-gray</option>
+					<option value="1">dark-gray-vector</option>
+					<option value="2">gray</option>
+					<option value="3">gray-vector</option>
+					<option value="4">hybrid</option>
+					<option value="5">national-geographic</option>
+					<option value="6">oceans</option>
+					<option value="7">osm</option>
+					<option value="8">satellite</option>
+					<option value="9">streets</option>
+					<option value="10">streets-navigation-vector</option>
+					<option value="11">streets-night-vector</option>
+					<option value="12">streets-relief-vector</option>
+					<option value="13">streets-vector</option>
+					<option value="14">terrain</option>
+					<option value="15">topo</option>
+					<option value="16">topo-vector</option>
+            </select>
+            <br>
+    更新要求：<br>
+            <select id="selectstyle">
+					<option value="0">dark-gray</option>
+					<option value="1">dark-gray-vector</option>
+					<option value="2">gray</option>
+					<option value="3">gray-vector</option>
+					<option value="4">hybrid</option>
+					<option value="5">national-geographic</option>
+					<option value="6">oceans</option>
+					<option value="7">osm</option>
+					<option value="8">satellite</option>
+					<option value="9">streets</option>
+					<option value="10">streets-navigation-vector</option>
+					<option value="11">streets-night-vector</option>
+					<option value="12">streets-relief-vector</option>
+					<option value="13">streets-vector</option>
+					<option value="14">terrain</option>
+					<option value="15">topo</option>
+					<option value="16">topo-vector</option>
+            </select> 
+            <br>
+     地区：<br>
+            <select id="selectstyle">
+					<option value="0">dark-gray</option>
+					<option value="1">dark-gray-vector</option>
+					<option value="2">gray</option>
+					<option value="3">gray-vector</option>
+					<option value="4">hybrid</option>
+					<option value="5">national-geographic</option>
+					<option value="6">oceans</option>
+					<option value="7">osm</option>
+					<option value="8">satellite</option>
+					<option value="9">streets</option>
+					<option value="10">streets-navigation-vector</option>
+					<option value="11">streets-night-vector</option>
+					<option value="12">streets-relief-vector</option>
+					<option value="13">streets-vector</option>
+					<option value="14">terrain</option>
+					<option value="15">topo</option>
+					<option value="16">topo-vector</option>
+            </select> 
+            <br><br>
+            <input type="button" id="btnhtml3" value="相关数据" onclick="relateddata()"/>
+</div>
+        <!-- <div class="container-fluid">  -->
+			<!-- <font size="5" color="black">新闻数据：</font> -->
+            <!-- <div class="row" id = "mytable">   -->
+			<div id="section">
+	
+                <table id="test-table"></table> 
+</div>				
+            <!-- </div>   -->
+        <!-- </div>  -->
+    </body>  
+    <script>  
+        $("#test-table").bootstrapTable(testFunc());  
+  
+        function testFunc(value) {  
+            var test = {  
+                toolbar: '#btn-action', //工具按钮用哪个容器  
+                striped: true, //设置为 true 会有隔行变色效果  
+                pagination: true, //设置为 true 会在表格底部显示分页条  
+                paginationLoop: false, //设置为 true 启用分页条无限循环的功能。无效果  
+                pageSize: 5, //如果设置了分页，页面数据条数  
+                cache: true,  
+                search: true, //是否启用搜索框  
+                //          showToggle:true, //是否显示 切换试图（table/card）按钮  
+                showPaginationSwitch: false, //是否显示 数据条数选择框。无效果  
+                //          checkboxHeader:true, //设置false 将在列头隐藏check-all checkbox .  
+                uniqueId: "id",  
+                //          searchText:"搜索", //初始化搜索文字  
+                selectItemName: "id",  
+                //          showHeader:true, //是否显示列头  
+                //          showFooter:false,//是否显示列脚  
+                showRefresh: true, //是否显示 刷新按钮  
+                showColumns: true, //是否显示 内容列下拉框  
+                //          sortable: true,      //是否启用排序  
+                sortOrder: "asc", //排序方式  
+                sortName: "id", //需要排序的字段  
+  
+                //          clickToSelect:false,//设置true 将在点击行时，自动选择rediobox 和 checkbox  
+                columns: [{  
+                        field: 'id',  
+                        title: 'ID',  
+                        sortable: true,  
+				        halign:"center",
+						valign:"middle",
+						<!-- rowspan: 2, -->
+                        formatter: function(val, row, index) {  
+                            return index + 1;  
+                        }  
+                    }, {  
+                        field: 'a',  
+                        title: '变化名称',
+						halign:"center",
+						valign:"middle",
+						width: '200px',
+						<!-- rowspan: 2 -->
+						
+						
+                    },  
+                    {  
+                        field: 'b',  
+                        title: '变化阶段',
+                      	halign:"center",
+						valign:"middle",
+					    width: '110px',	
+                        <!-- rowspan: 2					 -->
+                    },  
+					{  
+                        field: 'c',  
+                        title: '要素类型' ,
+						halign:"center",
+						valign:"middle",
+						width: '150px',	
+						<!-- rowspan: 2 -->
+                        				
+                    }, 
+					{  
+                        field: 'd',  
+                        title: '变化置信度',
+                       	width: '110px',	
+                        halign:"center",	
+                        <!-- align:	"center", -->
+                        <!-- falign:	"center",	 -->
+                        valign:"middle"						
+                    }, 
+					{  
+                        field: 'e',  
+                        title: '发现变化时间',
+						halign:"center",
+						valign:"middle"
+                    }, 
+							{  
+                        field: 'f',  
+                        title: '是否需要测绘',
+						halign:"center",
+						valign:"middle"
+                    }, 
+							{  
+                        field: 'g',  
+                        title: '3613规则',
+						halign:"center",
+						valign:"middle"
+                    }, 
+							{  
+                        field: 'h',  
+                        title: '要素地址',
+						halign:"center",
+						valign:"middle"
+                    }, 
+							{  
+                        field: 'i',  
+                        title: '线索信息',
+						halign:"center",
+						valign:"middle"
+                    },
+                ],  
+            }  
+            return test;  
+        };  
+		<!-- $("#upload-btn").click(function() {   -->
+		<!-- var data = []; -->
+        var data = [];  
+            <!-- var files = document.getElementById("file-value").files;   -->
+            <!-- var regp = new RegExp(".*,\".*,.*\"$");  -->
+			<!-- var file = files[0];   -->
+  
+                <!-- var reader = new FileReader(); -->
+				 <!-- reader.readAsText(file);   -->
+                <!-- reader.onload = function(f) {  -->
+				<!-- var relArr = this.result.split("\r\n");   -->
+		$.get("https://qqq807111690.github.io/web4gis15/all.csv",null,function(result){  
+                <!-- reader.onload = function(f) {   -->
+                    //                  var result = document.getElementById("result");  
+                    //显示文件 
+                    var relArr = result.split(/\n/);  
+                    if(!$.isEmptyObject(relArr) && relArr.length > 1) {  
+                        for(var key = 1, len = relArr.length; key < len; key++) {  
+                            var values = relArr[key];  
+                            <!-- if(regp.test(values)) {   -->
+                                <!-- alert("文件内容中有英文逗号，麻烦修改后再上传，含有英文逗号的内容是：" + values);   -->
+                                <!-- return;   -->
+                            <!-- }   -->
+                            if(!$.isEmptyObject(values)) {  
+                                var obj = {};  
+                                var objArr = values.split(",");  
+                                obj["a"] = objArr[0];  
+                                obj["b"] = objArr[1]; 
+								obj["c"] = objArr[2]; 
+								obj["d"] = objArr[3]; 
+								obj["e"] = objArr[4]; 
+								obj["f"] = objArr[5]; 
+								obj["g"] = objArr[6]; 
+								obj["h"] = objArr[7];
+								obj["i"] = objArr[8];
+								
+                                data.push(obj);  
+                            }  
+                        }  
+  
+                    }  
+                    console.log(data);  
+                    $("#test-table").bootstrapTable("load", data);  
+					})
+              <!-- }) -->
+			  
+    </script>  
+  
+</html>  
