@@ -1,0 +1,3065 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ALL>
+    <C1 name="地质地貌现象" code="01" descrption="内动力地貌符号描述文档">
+        <!--        <C2 name="内动力地貌" code="0101" descrption="">-->
+        <!--            <C3 name="区域构造地貌" code="0101" descrption="区域构造地貌">-->
+        <!--                <S name="构造山系" code="010101" file="abc.gltf" thumb="thumbnail.png" descrption="">-->
+        <!--            </S>-->
+
+        <!--                <S name="大陆裂谷" code="010102" file="a.glb" thumb="thumbnail.png" descrption="">-->
+        <!--            </S>-->
+        <!--            </C3>-->
+        <!--        </C2>-->
+        <C2 name="外动力地貌">
+            <C3 name="坡地重力地貌">
+                <C4 name="崩塌">
+                    <S name="崩积物崩塌"></S>
+                    <S name="表层风化物崩塌"></S>
+                    <S name="沉积物崩塌"></S>
+                    <S name="基岩崩塌"></S>
+                </C4>
+                <C4 name="滑坡">
+                    <S name="覆盖层滑坡"></S>
+                    <S name="基岩滑坡"></S>
+                </C4>
+                <C4 name="蠕动">
+                    <S name="松散层蠕动"></S>
+                    <S name="岩层蠕动"></S>
+                </C4>
+            </C3>
+            <C3 name="流水地貌">
+                <C4 name="沟谷流水地貌">
+                    <C5 name="沟谷">
+                        <S name="切沟"></S>
+                        <S name="冲沟"></S>
+                        <S name="坳沟"></S>
+                    </C5>
+                    <C5 name="扇形地">
+                        <S name="洪积扇"></S>
+                        <S name="冲积扇"></S>
+                    </C5>
+                    <C5 name="泥石流">
+                        <S name="标准型泥石流"></S>
+                        <S name="河谷型泥石流"></S>
+                        <S name="山坡型泥石流"></S>
+                    </C5>
+                </C4>
+                <C4 name="河谷流水地貌">
+                    <C5 name="河床地貌">
+                        <S name="顺直微弯型河床"></S>
+                        <S name="弯曲型河床"></S>
+                        <S name="分汊型河床"></S>
+                        <S name="散乱型河床"></S>
+                    </C5>
+                    <C5 name="河漫滩地貌">
+                        <S name="河曲型河漫滩"></S>
+                        <S name="汊道型河漫滩"></S>
+                        <S name="堰堤型河漫滩"></S>
+                    </C5>
+                    <C5 name="河流阶地">
+                        <S name="侵蚀阶地"></S>
+                        <S name="上叠阶地"></S>
+                        <S name="内叠阶地"></S>
+                        <S name="基座阶地"></S>
+                        <S name="埋藏阶地"></S>
+                    </C5>
+                    <C5 name="河谷">
+                        <S name="V字形河谷"></S>
+                        <S name="河漫滩河谷"></S>
+                        <S name="成熟河谷"></S>
+<!--                        <S name="河谷变换"></S>-->
+                    </C5>
+                </C4>
+
+                <C4 name="河口地区地貌">
+                    <S name="鸟爪形三角洲"></S>
+                    <S name="扇形三角洲"></S>
+                    <S name="尖头形三角洲"></S>
+                    <S name="指形三角洲"></S>
+                </C4>
+            </C3>
+            <C3 name="冰川地貌">
+                <C4 name="冰蚀地貌">
+                    <S name="冰斗"></S>
+                    <S name="角峰"></S>
+                    <S name="刃脊"></S>
+                    <S name="冰川谷"></S>
+                    <S name="悬谷"></S>
+                </C4>
+                <C4 name="冰碛地貌">
+                    <S name="尾碛堤"></S>
+                    <S name="侧碛堤"></S>
+                    <S name="冰碛丘陵"></S>
+                    <S name="鼓丘"></S>
+                </C4>
+            </C3>
+            <C3 name="风沙地貌">
+                <C4 name="风蚀地貌">
+                    <S name="风蚀蘑菇"></S>
+                    <S name="风蚀城堡"></S>
+                    <S name="风蚀谷（丘）"></S>
+                    <S name="风蚀雅丹"></S>
+                    <S name="风蚀洼地"></S>
+                </C4>
+                <C4 name="风积地貌">
+                    <S name="新月形沙丘"></S>
+                    <S name="季风型沙丘"></S>
+                    <S name="对流型沙丘"></S>
+                    <S name="干扰型沙丘"></S>
+                </C4>
+
+                <C4 name="荒漠">
+                    <S name="岩漠"></S>
+                    <S name="砾漠"></S>
+                    <S name="沙漠"></S>
+                    <S name="泥漠"></S>
+                </C4>
+
+            </C3>
+        </C2>
+
+        <C2 name="内动力地貌">
+            <C3 name="单斜构造地貌">
+                <S name="岩层三角面" thumbnail="png"/>
+                <S name="猪背岭" thumbnail="png"/>
+            </C3>
+            <C3 name="断层构造地貌">
+                <S name="断块山" thumbnail="png"/>
+                <S name="断层崖" thumbnail="png"/>
+                <S name="断层谷" thumbnail="png"/>
+                <S name="正断层" thumbnail="png"/>
+                <S name="逆断层" thumbnail="png"/>
+            </C3>
+            <C3 name="构造山系与大陆裂谷">
+                <S name="构造山系" thumbnail="png"/>
+            </C3>
+            <C3 name="褶皱构造地貌">
+                <C4 name="短轴褶曲构造地貌">
+                    <S name="船形山" thumbnail="png"/>
+                </C4>
+                <S name="长轴褶曲构造地貌" thumbnail="png"/>
+            </C3>
+        </C2>
+    </C1>
+
+    <C1 name="天气" code="01" descrption="内动力地貌符号描述文档">
+
+        <C2 name="晴">
+            <S name="晴-白天"></S>
+            <S name="晴-夜间"></S>
+        </C2>
+
+        <C2 name="多云">
+            <S name="多云-白天"></S>
+            <S name="多云-夜间"></S>
+        </C2>
+
+        <S name="阴"></S>
+
+        <C2 name="雨">
+            <S name="小雨"></S>
+            <S name="中雨"></S>
+            <S name="大雨"></S>
+            <S name="暴雨"></S>
+            <S name="大暴雨"></S>
+            <S name="特大暴雨"></S>
+            <S name="阵雨"></S>
+            <S name="小雨-中雨"></S>
+            <S name="中雨-大雨"></S>
+            <S name="大雨-暴雨"></S>
+            <S name="暴雨-大暴雨"></S>
+            <S name="大暴雨-特大暴雨"></S>
+            <C3 name="其他">
+                <S name="冻雨"></S>
+                <S name="雷阵雨"></S>
+                <S name="雨夹雪"></S>
+                <S name="雷雨天伴有冰雹"></S>
+            </C3>
+        </C2>
+
+        <C2 name="雪">
+            <S name="阵雪"></S>
+            <S name="小雪"></S>
+            <S name="中雪"></S>
+            <S name="大雪"></S>
+            <S name="暴雪"></S>
+            <S name="小雪-中雪"></S>
+            <S name="中雪-大雪"></S>
+            <S name="大雪-暴雪"></S>
+        </C2>
+
+        <C2 name="雾">
+            <S name="小雾"></S>
+            <S name="中雾"></S>
+            <S name="大雾"></S>
+        </C2>
+
+        <C2 name="沙尘天气">
+            <S name="浮尘"></S>
+            <S name="扬沙"></S>
+            <S name="沙尘暴"></S>
+            <S name="强沙尘暴"></S>
+        </C2>
+
+        <C2 name="霾">
+            <S name="轻微霾"></S>
+            <S name="轻度霾"></S>
+            <S name="中度霾"></S>
+            <S name="重度霾"></S>
+        </C2>
+
+
+    </C1>
+
+    <C1 name="气象">
+        <C2 name="气象气候现象">
+            <S name="大气环流"></S>
+            <C3 name="气旋系统">
+                <C4 name="气旋">
+                    <S name="温带气旋"></S>
+                    <S name="热带气旋"></S>
+                    <S name="地方性气旋"></S>
+                    <S name="高空冷涡"></S>
+                </C4>
+                <C4 name="反气旋">
+                    <S name="极地反气旋"></S>
+                    <S name="冷性反气旋"></S>
+                    <S name="暖性反气旋"></S>
+                </C4>
+            </C3>
+            <C3 name="云与云系">
+                <C4 name="云">
+                    <S name="卷云"></S>
+                    <S name="层云"></S>
+                    <C5 name="积云">
+                        <S name="淡积云"></S>
+                        <S name="浓积云"></S>
+                        <S name="碎积云"></S>
+                    </C5>
+                    <S name="卷积云"></S>
+                    <S name="卷层云"></S>
+                    <C5 name="高层云">
+                        <S name="避光高层云"></S>
+                        <S name="透光高层云"></S>
+                    </C5>
+                    <S name="高积云"></S>
+                    <S name="雨层云"></S>
+                    <S name="层积云"></S>
+                    <S name="积雨云"></S>
+                </C4>
+                <C4 name="云系">
+                    <S name="冷锋云系"></S>
+                    <S name="暖锋云系"></S>
+                    <S name="急流云系"></S>
+                    <S name="带状云系"></S>
+                    <S name="涡旋状云系"></S>
+                    <S name="逗点状云系"></S>
+                    <S name="叶状云系"></S>
+                    <S name="细胞状云系"></S>
+                    <S name="波状云系"></S>
+                </C4>
+            </C3>
+            <C3 name="锋面系统">
+                <S name="冷锋"></S>
+                <S name="暖锋"></S>
+                <S name="准静止锋"></S>
+                <S name="锢囚锋"></S>
+            </C3>
+            <C3 name="高压脊与低压槽">
+                <S name="高压脊"></S>
+                <S name="低压槽"></S>
+            </C3>
+        </C2>
+        <C2 name="其他局部气象">
+            <C3 name="龙卷风">
+                <S name="绳形龙卷风"></S>
+                <S name="烟囱形龙卷风"></S>
+                <S name="楔形龙卷风"></S>
+                <S name="多涡旋龙卷风"></S>
+            </C3>
+
+        </C2>
+    </C1>
+
+    <C1 name="POI">
+        <C2 name="酒店宾馆">
+            <C3 name="星级宾馆">
+                <S name="一二星级酒店"></S>
+                <S name="三星级酒店"></S>
+                <S name="四星级酒店"></S>
+                <S name="五星级酒店"></S>
+                <S name="六星级酒店"></S>
+            </C3>
+            <S name="青年旅社"></S>
+            <S name="酒店附属设施"></S>
+        </C2>
+
+        <C2 name="生活服务">
+            <C3 name="邮政">
+                <S name="邮局"></S>
+            </C3>
+            <C3 name="丧葬设施">
+                <S name="火葬场"></S>
+                <S name="公墓"></S>
+            </C3>
+            <S name="洗衣店"></S>
+            <S name="维修站点"></S>
+        </C2>
+
+        <C2 name="旅游景点">
+            <C3 name="公园广场">
+                <S name="公园"></S>
+                <S name="广场"></S>
+                <S name="动物园"></S>
+            </C3>
+            <C3 name="教堂">
+                <S name="基督教"></S>
+                <S name="伊斯兰教"></S>
+            </C3>
+        </C2>
+
+        <C2 name="汽车服务">
+            <C3 name="汽车销售与维修">
+                <S name="汽车维修"></S>
+            </C3>
+            <C3 name="综合能源站">
+                <S name="加油站"></S>
+            </C3>
+        </C2>
+
+        <C2 name="交通设施">
+            <C3 name="服务区">
+                <S name="高速停车区"></S>
+                <S name="高速加油站服务区"></S>
+                <S name="高速服务区"></S>
+                <S name="高速路收费站"></S>
+            </C3>
+            <C3 name="车站">
+                <S name="公交车站"></S>
+                <S name="出租车站"></S>
+            </C3>
+        </C2>
+
+        <C2 name="金融行业">
+            <S name="银行"></S>
+            <S name="24小时自助银行"></S>
+            <S name="保险公司"></S>
+            <S name="ATM"></S>
+            <S name="证券"></S>
+        </C2>
+
+        <C2 name="购物场所">
+            <C3 name="商场">
+                <S name="购物服务"></S>
+            </C3>
+            <S name="超市"></S>
+            <C3 name="电商商场">
+                <S name="电脑店"></S>
+            </C3>
+
+            <C3 name="专卖店">
+                <S name="摄影店"></S>
+                <S name="书店"></S>
+                <S name="乐器店"></S>
+                <S name="眼镜店"></S>
+            </C3>
+        </C2>
+
+        <C2 name="餐饮美食">
+            <S name="中餐厅"></S>
+            <C3 name="西餐厅">
+                <S name="意式菜品餐厅"></S>
+            </C3>
+            <C3 name="快餐">
+                <S name="西式快餐厅"></S>
+            </C3>
+            <S name="冷饮店"></S>
+            <S name="甜品店"></S>
+        </C2>
+
+        <C2 name="运动休闲">
+            <C3 name="娱乐场所">
+                <S name="KTV"></S>
+                <S name="酒吧"></S>
+                <S name="棋牌室"></S>
+            </C3>
+            <C3 name="运动场所">
+                <S name="足球场"></S>
+                <S name="乒乓球馆"></S>
+                <S name="台球厅"></S>
+            </C3>
+        </C2>
+
+        <C2 name="公司企业">
+            <C3 name='公司企业'>
+                <S name='建筑公司'></S>
+                <S name='医药公司'></S>
+            </C3>
+            <S name='工厂'></S>
+        </C2>
+
+        <C2 name="文化教育">
+            <C3 name="文化场馆">
+                <!--                <S name = '海洋馆'></S>-->
+                <S name='图书馆'></S>
+                <S name='天文馆'></S>
+            </C3>
+        </C2>
+
+        <C2 name="社会团体">
+            <S name='红十字会'></S>
+        </C2>
+
+        <C2 name="政府机构">
+            <C3 name="公检法机构">
+                <S name='警察局'></S>
+            </C3>
+            <C3 name="各职能部门">
+                <S name='人民政治协商会议委员会'></S>
+            </C3>
+        </C2>
+
+
+    </C1>
+
+
+    <C1 name="室内全息">
+        <C2 name="时间"></C2>
+
+        <C2 name="地点">
+            <C3 name="通行设施">
+                <S name="出入口"></S>
+                <S name="出口"></S>
+                <S name="入口"></S>
+                <S name="紧急逃生出口"></S>
+                <S name="扶梯"></S>
+                <S name="直梯"></S>
+                <S name="货运直梯"></S>
+                <S name="楼梯"></S>
+            </C3>
+            <C3 name="公共设施">
+                <S name="公共设施（总）" thumbnail="png"></S>
+                <S name="卫生间"></S>
+                <S name="男卫生间"></S>
+                <S name="女卫生间"></S>
+                <S name="无障碍卫生间"></S>
+                <S name="母婴室"></S>
+                <S name="休息区"></S>
+                <S name="收银台"></S>
+                <S name="公共电话"></S>
+                <S name="停车场"></S>
+                <S name="服务台"></S>
+                <S name="ATM"></S>
+                <S name="VIP区"></S>
+                <S name="急救点"></S>
+                <S name="工作间"></S>
+                <S name="媒体间"></S>
+            </C3>
+            <C3 name="餐饮">
+                <S name="餐饮（总）"></S>
+                <S name="外国餐厅"></S>
+                <S name="快餐小吃"></S>
+                <S name="甜品饮料"></S> 
+                <C4 name="中餐厅">
+                    <S name="火锅" thumbnail="png"></S>
+                    <S name="面类" thumbnail="png"></S>
+                    <S name="烧烤" thumbnail="png"></S>
+                    <S name="中餐厅"></S> 
+                </C4>
+            </C3>
+            <C3 name="购物">
+                <S name="购物（总）" thumbnail="png"></S>
+                <S name="超级市场"></S>
+                <S name="便民商店"></S>
+                <S name="综合市场"></S>
+                <C4 name="商场">
+                    <S name="商场"></S>
+                    <S name="童装" thumbnail="png"></S>
+                    <S name="男装" thumbnail="png"></S>
+                    <S name="女装" thumbnail="png"></S>
+                    <S name="电子产品" thumbnail="png"></S>
+                    <S name="护肤彩妆" thumbnail="png"></S>
+                    <S name="珠宝饰品" thumbnail="png"></S>
+                </C4>
+            </C3>
+            <C3 name="科教文化">
+                <S name="博物馆展览馆"></S>
+                <S name="科技馆"></S>
+                <S name="会议中心"></S>
+                <S name="图书馆档案馆"></S>
+                <S name="教育机构"></S>
+            </C3>
+            <C3 name="美容美发">
+                <S name="美容美发"></S>
+            </C3>
+            <C3 name="医疗保健">
+                <S name="医院"></S>
+                <S name="诊所"></S>
+                <S name="急救中心"></S>
+                <S name="药店"></S>
+                <S name="动物医疗场所"></S>
+            </C3>
+            <C3 name="运动休闲">
+                <C4 name="运动场馆">
+                    <S name="综合体育馆"></S>
+                    <S name="健身房"></S>
+                    <S name="保龄球馆"></S>
+                    <S name="网球馆"></S>
+                    <S name="篮球场馆"></S>
+                    <S name="溜冰场"></S>
+                    <S name="室内滑雪场"></S>
+                    <S name="乒乓球馆"></S>
+                    <S name="台球厅"></S>
+                    <S name="羽毛球馆"></S>
+                </C4>
+                <C4 name="休闲娱乐场所">
+                    <S name="KTV"></S>
+                    <S name="酒吧"></S>
+                    <S name="棋牌室"></S>
+                    <S name="网吧"></S>
+                    <S name="电影院"></S>
+                    <S name="音乐厅"></S>
+                    <S name="亲子游乐体验" thumbnail="png"></S>
+                    <S name="电玩游戏厅" thumbnail="png"></S>
+                </C4>
+            </C3>
+            <C3 name="住宿服务">
+                <S name="宾馆酒店"></S>
+                <S name="民宿"></S>
+            </C3>
+            <C3 name="风景名胜">
+                <S name="风景名胜"></S>
+            </C3>
+            <C3 name="生活住宅">
+                <S name="生活住宅"></S>
+            </C3>
+            <C3 name="金融保险">
+                <S name="银行"></S>
+            </C3>
+            <C3 name="公司企业">
+                <S name="公司企业"></S>
+            </C3>
+            <C3 name="政府机构及社会团体">
+                <S name="政府机关"></S>
+                <S name="外国机构"></S>
+                <S name="社会团体"></S>
+                <C4 name="公检法机构">
+                    <S name="公安局"></S>
+                    <S name="检察院法院"></S>
+                </C4>
+            </C3>
+        </C2>
+
+        <C2 name="人物">
+            <C3 name="男">
+                <S name="无身份男" thumbnail="png"></S>
+                <S name="媒体男" thumbnail="png"></S>
+                <S name="专家男" thumbnail="png"></S>
+                <S name="服务男" thumbnail="png"></S>
+                <S name="VIP男" thumbnail="png"></S>
+              
+            </C3>
+            <C3 name="女">
+                <S name="无身份女" thumbnail="png"></S>
+                <S name="媒体女" thumbnail="png"></S>
+                <S name="专家女" thumbnail="png"></S>
+                <S name="服务女" thumbnail="png"></S>
+                <S name="VIP女" thumbnail="png"></S>
+            </C3>
+            <C3 name="未知性别">
+                <S name="无身份" thumbnail="png"></S>
+                <S name="媒体" thumbnail="png"></S>
+                <S name="专家" thumbnail="png"></S>
+                <S name="服务" thumbnail="png"></S>
+                <S name="VIP" thumbnail="png"></S>
+            </C3>
+        </C2>
+
+        <C2 name="事物">
+            <C3 name="管线设施">
+                <S name="电线" thumbnail="png"></S>
+                <S name="网线" thumbnail="png"></S>
+                <S name="水管" thumbnail="png"></S>
+                <S name="燃气管" thumbnail="png"></S>
+                <S name="排污管" thumbnail="png"></S>
+            </C3>
+            <C3 name="家具装饰">
+                <C4 name="坐具">
+                    <S name="椅子" thumbnail="png"></S>
+                    <S name="凳子" thumbnail="png"></S>
+                    <S name="沙发" thumbnail="png"></S>
+                    <S name="坐垫" thumbnail="png"></S>
+                </C4>
+                <C4 name="柜子">
+                    <S name="收纳柜" thumbnail="png"></S>
+                    <S name="展示柜" thumbnail="png"></S>
+                    <S name="其他柜" thumbnail="png"></S>
+                </C4>
+                <C4 name="桌">
+                    <S name="餐桌" thumbnail="png"></S>
+                    <S name="办公桌" thumbnail="png"></S>
+                    <S name="其他桌" thumbnail="png"></S>
+                </C4>
+            </C3>
+            <C3 name="声光电磁设施">
+                <C4 name="声">
+                    <S name="广播声源" thumbnail="png"></S>
+                    <S name="预警声源" thumbnail="png"></S>
+                </C4>
+                <C4 name="光">
+                    <S name="照明灯" thumbnail="png"></S>
+                    <S name="消毒灯" thumbnail="png"></S>
+                    <S name="指示灯" thumbnail="png"></S>
+                    <S name="报警灯" thumbnail="png"></S>
+                </C4>
+                <C4 name="电磁">
+                    <S name="烟雾传感器" thumbnail="png"></S>
+                    <S name="位置传感器" thumbnail="png"></S>
+                    <S name="温度传感器" thumbnail="png"></S>
+                    <S name="通信传感器" thumbnail="png"></S>
+                    <S name="WiFi传感器" thumbnail="png"></S>
+                </C4>
+            </C3>
+            <C3 name="应急设施">
+                <C4 name="消防设施">
+                    <S name="消防栓" thumbnail="png"></S>
+                    <S name="灭火器" thumbnail="png"></S>
+                    <S name="灭火喷头" thumbnail="png"></S>
+                    <S name="灭火器箱" thumbnail="png"></S>
+                </C4>
+                <C4 name="医疗设施">
+                    <S name="急救箱" thumbnail="png"></S>
+                </C4>
+            </C3>
+        </C2>
+
+        <C2 name="事件">
+           <C3 name="会议事件">
+                <S name="开幕式"></S>
+                <S name="茶歇"></S>
+                <S name="闭幕式"></S>
+           </C3>
+           <C3 name="人员管理事件">
+                <S name="迟到" thumbnail="png"></S>
+                <S name="早退" thumbnail="png"></S>
+           </C3>
+           <C3 name="安全事件">
+                <S name="电梯故障"></S>
+                <S name="物品失窃"></S>
+                <S name="身份冒用"></S>
+                <S name="非法闯入"></S>
+                <S name="火灾"></S>
+           </C3>
+        </C2>
+        <C2 name="现象">
+            <S name="聚集"></S>
+            <S name="拥堵"></S>
+        </C2>
+        <C2 name="场景"></C2>
+
+
+    </C1>
+
+    <C1 name="时间">
+        <C2 name="日历">
+            <C3 name="座台历">
+                <C4 name="实体台历">
+                    <S name="纸质台历1" thumbnail="png"/>
+                    <S name="纸质台历2" thumbnail="png"/>
+                    <S name="纸质台历3" thumbnail="png"/>
+                </C4>
+                <S name="电子台历" thumbnail="png"/>
+            </C3>
+            <C3 name="挂历">
+                <S name="电子挂历" thumbnail="jpg"/>
+                <S name="纸质挂历" thumbnail="png"/>
+            </C3>
+        </C2>
+        <C2 name="表">
+            <C3 name="手表">
+                <S name="智能手表" thumbnail="png"/>
+                <S name="机械手表" thumbnail="png"/>
+                <S name="石英手表" thumbnail="png"/>
+            </C3>
+        </C2>
+        <C2 name="钟">
+            <C3 name="台式钟">
+                <C4 name="机械台式钟">
+                    <S name="机械台式钟1" thumbnail="png"/>
+                    <S name="机械台式钟2" thumbnail="png"/>
+                    <S name="机械台式钟3" thumbnail="png"/>
+                </C4>
+                <C4 name="电子台式钟">
+                    <S name="电子台式钟1" thumbnail="png"/>
+                    <S name="电子台式钟2" thumbnail="png"/>
+                    <S name="电子台式钟3" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="挂钟">
+                <C4 name="机械挂钟">
+                    <S name="机械挂钟1" thumbnail="png"/>
+                    <S name="机械挂钟2" thumbnail="png"/>
+                </C4>
+                <C4 name="电子挂钟">
+                    <S name="电子挂钟1" thumbnail="png"/>
+                    <S name="电子挂钟2" thumbnail="png"/>
+                    <S name="电子挂钟3" thumbnail="png"/>
+                    <S name="电子挂钟4" thumbnail="png"/>
+                </C4>
+            </C3>
+        </C2>
+    </C1>
+
+    <C1 name="现象">
+        <C2 name="社会现象">
+            <C3 name="其他">
+                <S name="哭笑不得" thumbnail="png"/>
+                <S name="坏笑" thumbnail="png"/>
+                <S name="嫌弃" thumbnail="png"/>
+                <S name="惊讶" thumbnail="png"/>
+                <S name="狰狞" thumbnail="png"/>
+                <S name="疑惑" thumbnail="png"/>
+                <S name="调皮" thumbnail="png"/>
+            </C3>
+            <C3 name="正面">
+                <S name="喜欢" thumbnail="png"/>
+                <S name="开心" thumbnail="png"/>
+                <S name="轻松" thumbnail="png"/>
+            </C3>
+            <C3 name="负面">
+                <S name="不屑" thumbnail="png"/>
+                <C4 name="伤心">
+                    <S name="伤心1" thumbnail="png"/>
+                    <S name="伤心2" thumbnail="png"/>
+                </C4>
+                <S name="失落" thumbnail="png"/>
+                <C4 name="恶心">
+                    <S name="恶心1" thumbnail="png"/>
+                    <S name="恶心2" thumbnail="png"/>
+                </C4>
+                <C4 name="愤怒">
+                    <S name="愤怒1" thumbnail="png"/>
+                    <S name="愤怒2" thumbnail="png"/>
+                </C4>
+                <S name="无奈" thumbnail="png"/>
+                <S name="疲惫" thumbnail="png"/>
+                <C4 name="难受">
+                    <S name="难受1" thumbnail="png"/>
+                    <S name="难受2" thumbnail="png"/>
+                </C4>
+            </C3>
+        </C2>
+        <C2 name="自然现象">
+            <C3 name="地理现象">
+                <S name="潮汐" thumbnail="jpg"/>
+                <S name="火山喷发" thumbnail="PNG"/>
+            </C3>
+            <C3 name="天气现象">
+                <S name="彩虹" thumbnail="PNG"/>
+                <S name="晴天" thumbnail="PNG"/>
+                <S name="霜冻" thumbnail="jpg"/>
+                <S name="龙卷风" thumbnail="PNG"/>
+            </C3>
+            <C3 name="物理现象">
+                <S name="彗星" thumbnail="jpg"/>
+                <S name="时间悖论" thumbnail="PNG"/>
+                <S name="雷电" thumbnail="jpg"/>
+            </C3>
+            <C3 name="生物现象">
+                <S name="死亡" thumbnail="jpg"/>
+                <S name="繁殖" thumbnail="PNG"/>
+            </C3>
+        </C2>
+    </C1>
+
+    <C1 name="专题-人">
+        <C2 name="人种">
+            <S name="白种人" thumbnail="PNG"/>
+            <S name="黄种人" thumbnail="PNG"/>
+            <S name="黑种人" thumbnail="PNG"/>
+        </C2>
+        <C2 name="国籍">
+            <S name="中国" thumbnail="png"/>
+            <S name="伊拉克" thumbnail="png"/>
+            <S name="俄罗斯" thumbnail="png"/>
+            <S name="刚果" thumbnail="png"/>
+            <S name="加拿大" thumbnail="png"/>
+            <S name="南非" thumbnail="png"/>
+            <S name="印第安" thumbnail="png"/>
+            <S name="危地马拉" thumbnail="png"/>
+            <S name="厄瓜多尔" thumbnail="png"/>
+            <S name="古巴" thumbnail="png"/>
+            <S name="哥伦比亚" thumbnail="png"/>
+            <S name="土耳其" thumbnail="png"/>
+            <S name="埃及" thumbnail="png"/>
+            <S name="墨西哥" thumbnail="png"/>
+            <S name="委内瑞拉" thumbnail="png"/>
+            <S name="尼泊尔" thumbnail="png"/>
+            <S name="巴西" thumbnail="png"/>
+            <S name="希腊" thumbnail="png"/>
+            <S name="德国" thumbnail="png"/>
+            <S name="意大利" thumbnail="png"/>
+            <S name="摩洛哥" thumbnail="png"/>
+            <S name="新西兰" thumbnail="png"/>
+            <S name="日本" thumbnail="png"/>
+            <S name="柬埔寨" thumbnail="png"/>
+            <S name="格陵兰（丹）" thumbnail="png"/>
+            <S name="沙特阿拉伯" thumbnail="png"/>
+            <S name="法国" thumbnail="png"/>
+            <S name="波兰" thumbnail="png"/>
+            <S name="澳大利亚" thumbnail="png"/>
+            <S name="爱尔兰" thumbnail="png"/>
+            <S name="牙买加" thumbnail="png"/>
+            <S name="瑞典" thumbnail="png"/>
+            <S name="秘鲁" thumbnail="png"/>
+            <S name="美国" thumbnail="png"/>
+            <S name="肯尼亚" thumbnail="png"/>
+            <S name="英国" thumbnail="png"/>
+            <S name="荷兰" thumbnail="png"/>
+            <S name="蒙古" thumbnail="png"/>
+            <S name="西班牙" thumbnail="png"/>
+            <S name="越南" thumbnail="png"/>
+            <S name="阿尔及利亚" thumbnail="png"/>
+            <S name="阿根廷" thumbnail="png"/>
+            <S name="马里" thumbnail="png"/>
+        </C2>
+        <C2 name="年龄">
+            <C3 name="中年">
+                <S name="女性中年" thumbnail="PNG"/>
+                <S name="男性中年" thumbnail="PNG"/>
+            </C3>
+            <C3 name="儿童">
+                <S name="女性儿童" thumbnail="PNG"/>
+                <S name="男性儿童" thumbnail="PNG"/>
+            </C3>
+            <C3 name="老人">
+                <S name="女性老年" thumbnail="PNG"/>
+                <S name="男性老年" thumbnail="PNG"/>
+            </C3>
+            <C3 name="青年">
+                <S name="女性青年" thumbnail="PNG"/>
+                <S name="男性青年" thumbnail="PNG"/>
+            </C3>
+        </C2>
+        <C2 name="性别">
+            <C3 name="女">
+                <S name="女性中年" thumbnail="PNG"/>
+                <S name="女性儿童" thumbnail="PNG"/>
+                <S name="女性老年" thumbnail="PNG"/>
+                <S name="女性青年" thumbnail="PNG"/>
+            </C3>
+            <C3 name="男">
+                <S name="男性中年" thumbnail="PNG"/>
+                <S name="男性儿童" thumbnail="PNG"/>
+                <S name="男性老年" thumbnail="PNG"/>
+                <S name="男性青年" thumbnail="PNG"/>
+            </C3>
+        </C2>
+        <C2 name="宗教">
+            <S name="伊斯兰教" thumbnail="png"/>
+            <S name="佛教" thumbnail="png"/>
+            <S name="印度教" thumbnail="png"/>
+            <S name="基督教" thumbnail="png"/>
+            <S name="犹太教" thumbnail="png"/>
+            <S name="神道教" thumbnail="png"/>
+            <S name="道教" thumbnail="png"/>
+        </C2>
+        <C2 name="民族">
+            <S name="东乡族" thumbnail="png"/>
+            <S name="侗族" thumbnail="png"/>
+            <S name="俄罗斯族" thumbnail="png"/>
+            <S name="保安族" thumbnail="png"/>
+            <S name="傣族" thumbnail="jpg"/>
+            <S name="印第安族" thumbnail="png"/>
+            <S name="哈尼族" thumbnail="png"/>
+            <S name="回族" thumbnail="png"/>
+            <S name="基诺族" thumbnail="png"/>
+            <S name="布依族" thumbnail="png"/>
+            <S name="布朗族" thumbnail="png"/>
+            <S name="德昂族" thumbnail="png"/>
+            <S name="拉祜族" thumbnail="png"/>
+            <S name="景颇族" thumbnail="png"/>
+            <S name="朝鲜族" thumbnail="png"/>
+            <S name="柯尔克孜族" thumbnail="png"/>
+            <S name="汉族" thumbnail="png"/>
+            <S name="满族" thumbnail="png"/>
+            <S name="独龙族" thumbnail="png"/>
+            <S name="珞巴族" thumbnail="jpg"/>
+            <S name="白族" thumbnail="jpg"/>
+            <S name="维吾尔族" thumbnail="png"/>
+            <S name="苗族" thumbnail="png"/>
+            <S name="蒙古族" thumbnail="png"/>
+            <S name="藏族" thumbnail="jpg"/>
+            <S name="诺基族" thumbnail="png"/>
+            <S name="越南族" thumbnail="png"/>
+            <S name="达斡尔族" thumbnail="png"/>
+            <S name="鄂伦春族" thumbnail="png"/>
+            <S name="鄂温克族" thumbnail="png"/>
+            <S name="阿昌族" thumbnail="png"/>
+            <S name="高山族" thumbnail="png"/>
+        </C2>
+        <C2 name="职业">
+            <C3 name="农村农业">
+                <S name="农民" thumbnail="PNG"/>
+            </C3>
+            <C3 name="制造">
+                <S name="制造工人" thumbnail="png"/>
+            </C3>
+            <C3 name="商业">
+                <S name="商人" thumbnail="png"/>
+            </C3>
+            <C3 name="政治">
+                <S name="主席" thumbnail="png"/>
+            </C3>
+            <C3 name="服务娱乐">
+                <S name="佣人" thumbnail="PNG"/>
+            </C3>
+            <C3 name="生产加工">
+                <S name="工人" thumbnail="PNG"/>
+            </C3>
+            <C3 name="科研教育">
+                <S name="老师" thumbnail="png"/>
+            </C3>
+            <C3 name="管理">
+                <S name="老板" thumbnail="PNG"/>
+            </C3>
+        </C2>
+    </C1>
+
+    <C1 name="专题-事件">
+        <C2 name="持续性事件">
+            <C3 name="公共事件">
+                <S name="大事件" thumbnail="jpg"/>
+                <S name="焦点问题" thumbnail="PNG"/>
+                <S name="特别关注事件" thumbnail="jpg"/>
+            </C3>
+            <C3 name="商业事件">
+                <C4 name="打折">
+                    <C5 name="买就送">
+                        <S name="买一送一" thumbnail="jpg"/>
+                        <S name="买二送一" thumbnail="jpg"/>
+                        <S name="买就送" thumbnail="jpg"/>
+                    </C5>
+                    <C5 name="包邮">
+                        <S name="包邮" thumbnail="jpg"/>
+                        <S name="包邮1" thumbnail="jpg"/>
+                        <S name="包邮2" thumbnail="jpg"/>
+                    </C5>
+                    <C5 name="打折">
+                        <S name="sale" thumbnail="jpg"/>
+                        <S name="低价" thumbnail="jpg"/>
+                        <S name="免费" thumbnail="jpg"/>
+                        <S name="惊爆价" thumbnail="jpg"/>
+                        <S name="满减" thumbnail="jpg"/>
+                        <S name="特价" thumbnail="jpg"/>
+                    </C5>
+                    <C5 name="新款">
+                        <S name="新品上市" thumbnail="jpg"/>
+                        <S name="新款" thumbnail="jpg"/>
+                        <S name="畅销新品" thumbnail="jpg"/>
+                    </C5>
+                    <C5 name="热卖">
+                        <S name="人气" thumbnail="jpg"/>
+                        <S name="热卖" thumbnail="jpg"/>
+                        <S name="热卖2" thumbnail="jpg"/>
+                        <S name="爆款" thumbnail="png"/>
+                    </C5>
+                    <C5 name="限时特价">
+                        <S name="限时打折" thumbnail="jpg"/>
+                        <S name="限时特价" thumbnail="png"/>
+                    </C5>
+                </C4>
+            </C3>
+            <C3 name="娱乐事件">
+                <S name="今日网红" thumbnail="jpg"/>
+                <S name="曝光" thumbnail="jpg"/>
+                <S name="走红" thumbnail="jpg"/>
+            </C3>
+            <C3 name="战争事件">
+                <S name="反战标签" thumbnail="jpg"/>
+                <S name="大规模武装冲突" thumbnail="jpg"/>
+                <S name="小规模武装摩擦" thumbnail="jpg"/>
+                <S name="维和标签" thumbnail="jpg"/>
+                <S name="轰炸" thumbnail="jpg"/>
+            </C3>
+            <C3 name="社会事件">
+                <S name="85°C台独" thumbnail="jpg"/>
+                <S name="反对PX化工" thumbnail="jpg"/>
+                <S name="反对台独" thumbnail="jpg"/>
+                <S name="反对港独" thumbnail="jpg"/>
+                <S name="台独事件" thumbnail="jpg"/>
+                <S name="星巴克种族歧视" thumbnail="PNG"/>
+            </C3>
+            <C3 name="自然事件">
+                <S name="低温" thumbnail="jpg"/>
+                <S name="降雨" thumbnail="jpg"/>
+                <S name="降雪" thumbnail="jpg"/>
+                <S name="高温" thumbnail="jpg"/>
+            </C3>
+        </C2>
+        <C2 name="突发事件">
+            <C3 name="事故灾难">
+                <S name="事故" thumbnail="jpg"/>
+                <S name="事故2" thumbnail="jpg"/>
+                <S name="交通事故" thumbnail="jpg"/>
+                <S name="火灾" thumbnail="PNG"/>
+            </C3>
+            <C3 name="公共卫生">
+                <S name="核辐射污染" thumbnail="jpg"/>
+                <S name="流感" thumbnail="jpg"/>
+                <C4 name="空气污染">
+                    <S name="空气污染橙" thumbnail="jpg"/>
+                    <S name="空气污染红" thumbnail="jpg"/>
+                    <S name="空气污染蓝" thumbnail="jpg"/>
+                    <S name="空气污染黄" thumbnail="jpg"/>
+                </C4>
+                <S name="食物中毒" thumbnail="jpg"/>
+            </C3>
+            <C3 name="社会安全">
+                <S name="抢劫" thumbnail="jpg"/>
+                <S name="暴力犯罪" thumbnail="jpg"/>
+                <S name="流血暴力事件" thumbnail="jpg"/>
+                <S name="突发事件" thumbnail="jpg"/>
+            </C3>
+            <C3 name="自然灾害">
+                <S name="台风" thumbnail="PNG"/>
+                <S name="地震" thumbnail="PNG"/>
+                <S name="坍塌" thumbnail="jpg"/>
+                <S name="泥石流" thumbnail="jpg"/>
+                <C4 name="洪水">
+                    <S name="洪水橙" thumbnail="PNG"/>
+                    <S name="洪水红" thumbnail="PNG"/>
+                    <S name="洪水蓝" thumbnail="PNG"/>
+                    <S name="洪水黄" thumbnail="PNG"/>
+                </C4>
+                <S name="火山喷发" thumbnail="jpg"/>
+                <S name="雪崩" thumbnail="PNG"/>
+            </C3>
+        </C2>
+    </C1>
+
+    <C1 name="专题-场景">
+        <C2 name="亚洲">
+            <S name="中国" thumbnail="jpg"/>
+            <S name="土耳其" thumbnail="jpg"/>
+            <S name="新加坡" thumbnail="jpg"/>
+            <S name="日本" thumbnail="jpg"/>
+            <S name="朝鲜" thumbnail="jpg"/>
+            <S name="沙特阿拉伯" thumbnail="jpg"/>
+            <S name="泰国" thumbnail="jpg"/>
+            <S name="韩国" thumbnail="jpg"/>
+            <S name="马来西亚" thumbnail="jpg"/>
+        </C2>
+        <C2 name="北美洲">
+            <S name="加拿大" thumbnail="jpg"/>
+            <S name="美国" thumbnail="jpg"/>
+        </C2>
+        <C2 name="南美洲">
+            <S name="巴西" thumbnail="jpg"/>
+            <S name="智利" thumbnail="jpg"/>
+        </C2>
+        <C2 name="欧洲">
+            <S name="丹麦" thumbnail="jpg"/>
+            <S name="乌克兰" thumbnail="jpg"/>
+            <S name="俄罗斯" thumbnail="jpg"/>
+            <S name="冰岛" thumbnail="jpg"/>
+            <S name="奥地利" thumbnail="jpg"/>
+            <S name="希腊" thumbnail="jpg"/>
+            <S name="德国" thumbnail="jpg"/>
+            <S name="挪威" thumbnail="jpg"/>
+            <S name="捷克共和国" thumbnail="jpg"/>
+            <S name="瑞典" thumbnail="jpg"/>
+            <S name="瑞士" thumbnail="jpg"/>
+            <S name="芬兰" thumbnail="jpg"/>
+            <S name="英格兰" thumbnail="jpg"/>
+            <S name="荷兰" thumbnail="jpg"/>
+        </C2>
+        <C2 name="澳洲">
+            <S name="新西兰" thumbnail="jpg"/>
+            <S name="澳大利亚" thumbnail="jpg"/>
+        </C2>
+        <C2 name="非洲">
+            <S name="埃及" thumbnail="jpg"/>
+        </C2>
+    </C1>
+
+    <C1 name="专题-交通">
+        <C2 name="交警手势">
+            <S name="停止信号" thumbnail="gif"/>
+            <S name="减速慢行信号" thumbnail="gif"/>
+            <S name="变道信号" thumbnail="gif"/>
+            <S name="右转弯信号" thumbnail="gif"/>
+            <S name="左转弯信号" thumbnail="gif"/>
+            <S name="左转弯待转信号" thumbnail="gif"/>
+            <S name="直行信号" thumbnail="gif"/>
+            <S name="靠边停车信号" thumbnail="gif"/>
+        </C2>
+        <C2 name="交通事故">
+            <S name="交叉路口超车A车全责" thumbnail="gif"/>
+            <S name="会车超车A车全责" thumbnail="gif"/>
+            <S name="倒车溜车A车全责" thumbnail="gif"/>
+            <S name="变更车道A车全责" thumbnail="gif"/>
+            <S name="右侧超车A车全责" thumbnail="gif"/>
+            <S name="右转未让直行A车全责" thumbnail="gif"/>
+            <S name="右转车未让行A车全责" thumbnail="gif"/>
+            <S name="左转未让直行A车全责" thumbnail="gif"/>
+            <S name="开关车门未排查A车全责" thumbnail="gif"/>
+            <S name="掉头未让行A车全责" thumbnail="gif"/>
+            <S name="有灯路口未让行A车全责" thumbnail="gif"/>
+            <S name="未按提示标志让行A车全责" thumbnail="gif"/>
+            <S name="汽车追尾A车全责" thumbnail="gif"/>
+            <S name="超越左转弯与掉头A车全责" thumbnail="gif"/>
+            <S name="越线超车A车全责" thumbnail="gif"/>
+            <S name="路口未让右侧A车全责" thumbnail="gif"/>
+            <S name="路障未让行A车全责" thumbnail="gif"/>
+            <S name="进出穿越未让行A车全责" thumbnail="gif"/>
+            <S name="进环岛未让行A车全责" thumbnail="gif"/>
+            <S name="驶入专用车道A车全责" thumbnail="gif"/>
+        </C2>
+        <C2 name="交通标志">
+            <C3 name="交通指示标志">
+                <S name="人行横道" thumbnail="gif"/>
+                <S name="会车先行" thumbnail="gif"/>
+                <S name="允许掉头" thumbnail="gif"/>
+                <S name="公交线路专用车道" thumbnail="gif"/>
+                <S name="分向行驶车道" thumbnail="gif"/>
+                <S name="前方测速区" thumbnail="png"/>
+                <S name="单行路 直行" thumbnail="gif"/>
+                <S name="单行路向左或向右" thumbnail="gif"/>
+                <S name="右转车道" thumbnail="gif"/>
+                <S name="向右转弯" thumbnail="gif"/>
+                <S name="向左和向右转弯" thumbnail="gif"/>
+                <S name="向左转弯" thumbnail="gif"/>
+                <S name="干路先行" thumbnail="gif"/>
+                <S name="最低限速" thumbnail="gif"/>
+                <S name="机动车行驶" thumbnail="gif"/>
+                <S name="机动车车道" thumbnail="gif"/>
+                <S name="步行" thumbnail="gif"/>
+                <S name="测速" thumbnail="png"/>
+                <S name="环岛行驶" thumbnail="gif"/>
+                <S name="直行" thumbnail="gif"/>
+                <S name="直行和向右转弯" thumbnail="gif"/>
+                <S name="直行和向左转弯" thumbnail="gif"/>
+                <S name="直行和有转合用车道" thumbnail="gif"/>
+                <S name="直行车道" thumbnail="gif"/>
+                <S name="立交直行和右转弯行驶" thumbnail="gif"/>
+                <S name="立交直行和左转弯行驶" thumbnail="gif"/>
+                <S name="非机动车行驶" thumbnail="gif"/>
+                <S name="非机动车车道" thumbnail="gif"/>
+                <S name="靠右侧道路行驶" thumbnail="gif"/>
+                <S name="靠左侧道路行驶" thumbnail="gif"/>
+                <S name="鸣喇叭" thumbnail="gif"/>
+            </C3>
+            <C3 name="交通指路标志">
+                <S name="丁字交叉路口" thumbnail="gif"/>
+                <S name="下一出口" thumbnail="gif"/>
+                <S name="两侧通行" thumbnail="gif"/>
+                <S name="事故易发点" thumbnail="gif"/>
+                <S name="互通式立交" thumbnail="gif"/>
+                <S name="交叉路口预告" thumbnail="gif"/>
+                <S name="人行地下通道" thumbnail="gif"/>
+                <S name="人行天桥" thumbnail="gif"/>
+                <S name="保护动物" thumbnail="gif"/>
+                <S name="停产区预告" thumbnail="gif"/>
+                <S name="停车场" thumbnail="gif"/>
+                <S name="停车场预告" thumbnail="gif"/>
+                <S name="入口" thumbnail="gif"/>
+                <S name="入口预告" thumbnail="gif"/>
+                <S name="出口" thumbnail="gif"/>
+                <S name="出口编码预告" thumbnail="gif"/>
+                <S name="出口预告" thumbnail="gif"/>
+                <S name="分岔处" thumbnail="gif"/>
+                <S name="分流" thumbnail="gif"/>
+                <S name="加油站" thumbnail="gif"/>
+                <S name="十字交叉路口" thumbnail="gif"/>
+                <S name="县道编号" thumbnail="gif"/>
+                <S name="右侧通行" thumbnail="gif"/>
+                <S name="名胜古迹" thumbnail="gif"/>
+                <S name="国道编号" thumbnail="gif"/>
+                <S name="地名" thumbnail="gif"/>
+                <S name="地点方向" thumbnail="gif"/>
+                <S name="地点距离" thumbnail="gif"/>
+                <S name="地铁站" thumbnail="gif"/>
+                <S name="多雾路段" thumbnail="gif"/>
+                <S name="大型车靠右" thumbnail="gif"/>
+                <S name="客轮码头" thumbnail="gif"/>
+                <S name="左侧通行" thumbnail="gif"/>
+                <S name="急救站" thumbnail="gif"/>
+                <S name="收费站预告" thumbnail="gif"/>
+                <S name="服务区预告" thumbnail="gif"/>
+                <S name="此路不通" thumbnail="gif"/>
+                <S name="残疾人专用设施" thumbnail="gif"/>
+                <S name="汽车维修" thumbnail="gif"/>
+                <S name="注意横风" thumbnail="gif"/>
+                <S name="洗车" thumbnail="gif"/>
+                <S name="火车站" thumbnail="gif"/>
+                <S name="爬坡车道" thumbnail="gif"/>
+                <S name="环形交叉路口" thumbnail="gif"/>
+                <S name="电话指示位置" thumbnail="gif"/>
+                <S name="百米碑" thumbnail="gif"/>
+                <S name="省道编号" thumbnail="gif"/>
+                <S name="紧急停车带" thumbnail="gif"/>
+                <S name="紧急电话" thumbnail="gif"/>
+                <S name="终点" thumbnail="gif"/>
+                <S name="终点提示" thumbnail="gif"/>
+                <S name="终点预告" thumbnail="gif"/>
+                <S name="绕行标志" thumbnail="gif"/>
+                <S name="著名地名" thumbnail="gif"/>
+                <S name="行政区划分界" thumbnail="gif"/>
+                <S name="行驶方向" thumbnail="gif"/>
+                <S name="起点" thumbnail="gif"/>
+                <S name="路滑慢行" thumbnail="gif"/>
+                <S name="车距确认" thumbnail="gif"/>
+                <S name="轮渡" thumbnail="gif"/>
+                <S name="软基路段" thumbnail="gif"/>
+                <S name="连续下坡" thumbnail="gif"/>
+                <S name="道路交通信息" thumbnail="gif"/>
+                <S name="道路管理分离" thumbnail="gif"/>
+                <S name="避车道" thumbnail="gif"/>
+                <S name="里程碑" thumbnail="gif"/>
+                <S name="长途汽车站" thumbnail="gif"/>
+                <S name="长隧道" thumbnail="gif"/>
+                <S name="陡坡慢行" thumbnail="gif"/>
+                <S name="飞机场" thumbnail="gif"/>
+                <S name="餐饮" thumbnail="gif"/>
+            </C3>
+            <C3 name="交通禁令标志">
+                <S name="会车让行" thumbnail="gif"/>
+                <S name="停车检查" thumbnail="gif"/>
+                <S name="停车让行" thumbnail="gif"/>
+                <S name="减速让行" thumbnail="gif"/>
+                <S name="禁止三轮机动车通行" thumbnail="gif"/>
+                <S name="禁止二轮摩托通行" thumbnail="gif"/>
+                <S name="禁止人力客运三轮车通行" thumbnail="gif"/>
+                <S name="禁止人力货运三轮车通行" thumbnail="gif"/>
+                <S name="禁止人力车通行" thumbnail="gif"/>
+                <S name="禁止农用车通行" thumbnail="gif"/>
+                <S name="禁止向右转弯" thumbnail="gif"/>
+                <S name="禁止向左向右转弯" thumbnail="gif"/>
+                <S name="禁止向左转弯" thumbnail="gif"/>
+                <S name="禁止大型客车通行" thumbnail="gif"/>
+                <S name="禁止小型客车通行" thumbnail="gif"/>
+                <S name="禁止拖拉机通行" thumbnail="gif"/>
+                <S name="禁止掉头" thumbnail="gif"/>
+                <S name="禁止机动车通行" thumbnail="gif"/>
+                <S name="禁止某两种车通行" thumbnail="gif"/>
+                <S name="禁止汽车拖、挂车通行" thumbnail="gif"/>
+                <S name="禁止畜力车通行" thumbnail="gif"/>
+                <S name="禁止直行" thumbnail="gif"/>
+                <S name="禁止直行和向右转弯" thumbnail="gif"/>
+                <S name="禁止直行和向左转弯" thumbnail="gif"/>
+                <S name="禁止行人通行" thumbnail="gif"/>
+                <S name="禁止超车" thumbnail="gif"/>
+                <S name="禁止车辆临时或长时间停放" thumbnail="gif"/>
+                <S name="禁止运输危险物品车辆驶入标志" thumbnail="gif"/>
+                <S name="禁止通行" thumbnail="gif"/>
+                <S name="禁止非机动车通行" thumbnail="gif"/>
+                <S name="禁止驶入" thumbnail="gif"/>
+                <S name="禁止骑自行车上坡" thumbnail="gif"/>
+                <S name="禁止骑自行车下坡" thumbnail="gif"/>
+                <S name="禁止鸣喇叭" thumbnail="gif"/>
+                <S name="解除禁止超车" thumbnail="gif"/>
+                <S name="解除限制速度" thumbnail="gif"/>
+                <S name="限制宽度" thumbnail="gif"/>
+                <S name="限制质量" thumbnail="gif"/>
+                <S name="限制轴重" thumbnail="gif"/>
+                <S name="限制速度" thumbnail="gif"/>
+                <S name="限制高度" thumbnail="gif"/>
+                <S name="除公共汽车外" thumbnail="gif"/>
+            </C3>
+            <C3 name="交通警告标志">
+                <S name="T形交叉" thumbnail="gif"/>
+                <S name="Y形交叉" thumbnail="gif"/>
+                <S name="上陡坡" thumbnail="gif"/>
+                <S name="下陡坡" thumbnail="gif"/>
+                <S name="两侧变窄" thumbnail="gif"/>
+                <S name="事故易发路段" thumbnail="gif"/>
+                <S name="傍山险路" thumbnail="gif"/>
+                <S name="十字交叉" thumbnail="gif"/>
+                <S name="双向交通" thumbnail="gif"/>
+                <S name="反向弯路" thumbnail="gif"/>
+                <S name="右侧变窄" thumbnail="gif"/>
+                <S name="右侧绕行" thumbnail="gif"/>
+                <S name="向右急转路" thumbnail="gif"/>
+                <S name="向左急转路" thumbnail="gif"/>
+                <S name="堤坝路" thumbnail="gif"/>
+                <S name="左侧变窄" thumbnail="gif"/>
+                <S name="左侧绕行" thumbnail="gif"/>
+                <S name="左右绕行" thumbnail="gif"/>
+                <S name="慢行" thumbnail="gif"/>
+                <S name="施工" thumbnail="gif"/>
+                <S name="无人看守铁路道口" thumbnail="gif"/>
+                <S name="易滑" thumbnail="gif"/>
+                <S name="有人看守铁路道口" thumbnail="gif"/>
+                <S name="村庄" thumbnail="gif"/>
+                <S name="注意信号灯" thumbnail="gif"/>
+                <S name="注意儿童" thumbnail="gif"/>
+                <S name="注意危险" thumbnail="gif"/>
+                <S name="注意横风" thumbnail="gif"/>
+                <S name="注意牲畜" thumbnail="gif"/>
+                <S name="注意落石" thumbnail="gif"/>
+                <S name="注意行人" thumbnail="gif"/>
+                <S name="注意非机动车" thumbnail="gif"/>
+                <S name="渡口" thumbnail="gif"/>
+                <S name="环形交叉" thumbnail="gif"/>
+                <S name="窄桥" thumbnail="gif"/>
+                <S name="路面不平" thumbnail="gif"/>
+                <S name="过水路面" thumbnail="gif"/>
+                <S name="连续弯路" thumbnail="gif"/>
+                <S name="隧道" thumbnail="gif"/>
+                <S name="驼峰桥" thumbnail="gif"/>
+            </C3>
+            <C3 name="交通辅助标志">
+                <S name="事故" thumbnail="jpg"/>
+                <S name="公共汽车" thumbnail="jpg"/>
+                <S name="出租车" thumbnail="jpg"/>
+                <S name="向前200M" thumbnail="jpg"/>
+                <S name="向左100M" thumbnail="jpg"/>
+                <S name="向左、向右各50M" thumbnail="jpg"/>
+                <S name="坍方" thumbnail="jpg"/>
+                <S name="学校" thumbnail="jpg"/>
+                <S name="小型汽车" thumbnail="jpg"/>
+                <S name="无轨电车" thumbnail="gif"/>
+                <S name="时间范围1" thumbnail="jpg"/>
+                <S name="时间范围2" thumbnail="jpg"/>
+                <S name="某区域内" thumbnail="jpg"/>
+                <S name="海关" thumbnail="jpg"/>
+                <S name="租赁车" thumbnail="jpg"/>
+                <S name="组合" thumbnail="jpg"/>
+                <S name="货车" thumbnail="jpg"/>
+                <S name="货车、拖拉机" thumbnail="jpg"/>
+                <S name="除公共汽车外" thumbnail="jpg"/>
+            </C3>
+            <C3 name="旅游区标志">
+                <S name="冬季浏览区" thumbnail="gif"/>
+                <S name="划船" thumbnail="gif"/>
+                <S name="徒步" thumbnail="gif"/>
+                <S name="旅游区方向" thumbnail="gif"/>
+                <S name="旅游区距离" thumbnail="gif"/>
+                <S name="游戏场" thumbnail="gif"/>
+                <S name="游泳" thumbnail="gif"/>
+                <S name="滑冰" thumbnail="gif"/>
+                <S name="滑雪" thumbnail="gif"/>
+                <S name="潜水" thumbnail="gif"/>
+                <S name="索道" thumbnail="gif"/>
+                <S name="营火" thumbnail="gif"/>
+                <S name="野营地" thumbnail="gif"/>
+                <S name="钓鱼" thumbnail="gif"/>
+                <S name="问询处" thumbnail="gif"/>
+                <S name="骑马" thumbnail="gif"/>
+                <S name="高尔夫球" thumbnail="gif"/>
+            </C3>
+            <C3 name="道路施工安全标志">
+                <S name="中间封闭" thumbnail="jpg"/>
+                <S name="前方施工" thumbnail="jpg"/>
+                <S name="右道封闭" thumbnail="jpg"/>
+                <S name="向右改道" thumbnail="jpg"/>
+                <S name="向右行驶" thumbnail="jpg"/>
+                <S name="向左改道" thumbnail="jpg"/>
+                <S name="向左行驶" thumbnail="jpg"/>
+                <S name="左道封闭" thumbnail="jpg"/>
+                <S name="施工路栏" thumbnail="jpg"/>
+                <S name="移动性施工标志" thumbnail="jpg"/>
+                <S name="车辆慢行" thumbnail="jpg"/>
+                <S name="道口标柱" thumbnail="jpg"/>
+                <S name="道路封闭" thumbnail="jpg"/>
+                <S name="锥形交通标" thumbnail="jpg"/>
+            </C3>
+        </C2>
+        <C2 name="道路交通标线">
+            <C3 name="指示标线">
+                <S name="人行横道(信号灯路口)" thumbnail="jpg"/>
+                <S name="人行横道(斜交)" thumbnail="jpg"/>
+                <S name="人行横道(正交)" thumbnail="jpg"/>
+                <S name="倾斜式停车位" thumbnail="jpg"/>
+                <S name="双向两车道路面中心线" thumbnail="jpg"/>
+                <S name="垂直式停车位" thumbnail="jpg"/>
+                <S name="左弯待转区线" thumbnail="jpg"/>
+                <S name="左转弯导向线" thumbnail="jpg"/>
+                <S name="平行式停车位" thumbnail="jpg"/>
+                <S name="港湾式停靠站" thumbnail="jpg"/>
+                <S name="车行道分界线" thumbnail="jpg"/>
+                <S name="车行道边缘线" thumbnail="jpg"/>
+            </C3>
+            <C3 name="禁止标线">
+                <S name="Y形路口导流线" thumbnail="jpg"/>
+                <S name="三车道标线" thumbnail="jpg"/>
+                <S name="不规则路口导流线" thumbnail="jpg"/>
+                <S name="中心黄色双实线" thumbnail="jpg"/>
+                <S name="中心黄色虚实线" thumbnail="jpg"/>
+                <S name="信号灯路口的停止线" thumbnail="jpg"/>
+                <S name="停车让行线" thumbnail="jpg"/>
+                <S name="减速让行线" thumbnail="jpg"/>
+                <S name="复杂行驶条件丁字路口导流线" thumbnail="jpg"/>
+                <S name="复杂行驶条件十字路口导流线" thumbnail="jpg"/>
+                <S name="支路口主干道相交路口导流钱" thumbnail="jpg"/>
+                <S name="斜交丁字路口导流线" thumbnail="jpg"/>
+                <S name="禁止变换车道线" thumbnail="jpg"/>
+                <S name="禁止路边临时或长时停放车辆线" thumbnail="jpg"/>
+                <S name="禁止路边长时停放车辆线" thumbnail="jpg"/>
+                <S name="非机动车禁驶区标线" thumbnail="jpg"/>
+            </C3>
+            <C3 name="警告标线">
+                <S name="三车道斑马线过渡" thumbnail="jpg"/>
+                <S name="三车道缩减为双车道" thumbnail="jpg"/>
+                <S name="减速标线" thumbnail="jpg"/>
+                <S name="双向两车道改变为双向四车道" thumbnail="jpg"/>
+                <S name="四车道缩减为三车道" thumbnail="jpg"/>
+                <S name="四车道缩减为两车道" thumbnail="jpg"/>
+                <S name="四车道缩减为双车道" thumbnail="jpg"/>
+            </C3>
+        </C2>
+    </C1>
+
+    <C1 name="专题-事物（国情）">
+        <C2 name="地表覆盖">
+            <C3 name="人工堆掘地">
+                <S name="其他人工堆掘地" thumbnail="png"/>
+                <S name="堆放物" thumbnail="png"/>
+                <S name="建筑工地" thumbnail="png"/>
+                <S name="露天采掘场" thumbnail="png"/>
+            </C3>
+            <C3 name="房屋建筑">
+                <S name="一般房屋建筑区" thumbnail="png"/>
+                <S name="低矮房屋建筑区" thumbnail="png"/>
+                <S name="低矮独立房屋建筑" thumbnail="png"/>
+                <S name="多层及以上房屋建筑区" thumbnail="png"/>
+                <S name="多层及以上独立房屋建筑" thumbnail="png"/>
+                <S name="废弃房屋建筑区" thumbnail="png"/>
+            </C3>
+            <C3 name="构筑物">
+                <S name="其他构筑物" thumbnail="png"/>
+                <S name="固化池" thumbnail="png"/>
+                <S name="城墙" thumbnail="png"/>
+                <S name="工业设施" thumbnail="png"/>
+                <S name="水工设施" thumbnail="png"/>
+                <S name="沙障" thumbnail="png"/>
+                <S name="温室、大棚" thumbnail="png"/>
+                <S name="硬化地表" thumbnail="png"/>
+            </C3>
+            <C3 name="林草覆盖">
+                <S name="一般林草覆盖" thumbnail="png"/>
+                <S name="中覆盖度草地" thumbnail="png"/>
+                <S name="乔木林" thumbnail="png"/>
+                <S name="乔灌混合林" thumbnail="png"/>
+                <S name="人工幼林" thumbnail="png"/>
+                <S name="人工草地" thumbnail="png"/>
+                <S name="低覆盖度草地" thumbnail="png"/>
+                <S name="天然草地" thumbnail="png"/>
+                <S name="灌木林" thumbnail="png"/>
+                <S name="疏林" thumbnail="png"/>
+                <S name="稀疏灌草丛" thumbnail="png"/>
+                <S name="竹林" thumbnail="png"/>
+                <S name="绿化林地" thumbnail="png"/>
+                <S name="高覆盖度草地" thumbnail="png"/>
+            </C3>
+            <C3 name="水域">
+                <S name="冰川与常年积雪" thumbnail="png"/>
+                <S name="水面" thumbnail="png"/>
+            </C3>
+            <C3 name="种植土地">
+                <S name="一般种植土地" thumbnail="png"/>
+                <S name="其他经济苗木" thumbnail="png"/>
+                <S name="旱地" thumbnail="png"/>
+                <S name="果园" thumbnail="png"/>
+                <S name="桑园" thumbnail="png"/>
+                <S name="橡胶园" thumbnail="png"/>
+                <S name="水田" thumbnail="png"/>
+                <S name="花圃" thumbnail="png"/>
+                <S name="苗圃" thumbnail="png"/>
+                <S name="茶园" thumbnail="png"/>
+            </C3>
+            <C3 name="荒漠与裸露地表">
+                <S name="其他荒漠与裸露地表" thumbnail="png"/>
+                <S name="岩石地表" thumbnail="png"/>
+                <S name="沙质地表" thumbnail="png"/>
+                <S name="泥土地表" thumbnail="png"/>
+                <S name="盐碱地表" thumbnail="png"/>
+                <S name="砾石地表" thumbnail="png"/>
+            </C3>
+            <C3 name="铁路与道路">
+                <S name="道路路面" thumbnail="png"/>
+                <S name="铁路路面" thumbnail="png"/>
+            </C3>
+        </C2>
+        <C2 name="重要要素">
+            <C3 name="交通设施">
+                <S name="机场" thumbnail="png"/>
+                <S name="桥梁" thumbnail="png"/>
+                <S name="港口" thumbnail="png"/>
+                <S name="火车站" thumbnail="png"/>
+                <S name="隧道" thumbnail="png"/>
+            </C3>
+            <C3 name="地理单元注记">
+                <S name="地质公园名称" thumbnail="png"/>
+                <S name="森林公园名称" thumbnail="png"/>
+                <S name="自然、文化遗产名称" thumbnail="png"/>
+                <S name="自然、文娱保护区名称" thumbnail="png"/>
+                <S name="行政区域名称" thumbnail="png"/>
+                <S name="风景名胜区名称" thumbnail="png"/>
+            </C3>
+            <C3 name="地理名称注记">
+                <S name="山岭、山脉名" thumbnail="png"/>
+                <S name="岛屿、沙滩" thumbnail="png"/>
+                <S name="水系名" thumbnail="png"/>
+                <S name="独立山、高地" thumbnail="png"/>
+                <S name="盆地、沙漠、谷地" thumbnail="png"/>
+            </C3>
+            <C3 name="居民地">
+                <S name="乡镇" thumbnail="png"/>
+                <S name="县级政府驻地" thumbnail="png"/>
+                <S name="地级政府驻地" thumbnail="png"/>
+                <S name="村庄" thumbnail="png"/>
+                <S name="省级政府驻地" thumbnail="png"/>
+                <S name="首都" thumbnail="png"/>
+            </C3>
+            <C3 name="居民地注记">
+                <S name="乡镇、农场驻地" thumbnail="png"/>
+                <S name="县级行政驻地" thumbnail="png"/>
+                <S name="地级行政驻地" thumbnail="png"/>
+                <S name="村庄" thumbnail="png"/>
+                <S name="省级行政驻地" thumbnail="png"/>
+                <S name="首都" thumbnail="png"/>
+            </C3>
+            <C3 name="水域">
+                <S name="常年河（线状）" thumbnail="png"/>
+                <S name="干涸河（线状）" thumbnail="png"/>
+                <S name="时令河（线状）" thumbnail="png"/>
+                <S name="沟渠（线状）" thumbnail="png"/>
+                <S name="运河（线状）" thumbnail="png"/>
+            </C3>
+            <C3 name="水工设施">
+                <S name="坝" thumbnail="png"/>
+                <S name="堤" thumbnail="png"/>
+            </C3>
+            <C3 name="行政管理单元">
+                <S name="县级行政区界线" thumbnail="png"/>
+                <S name="国界" thumbnail="png"/>
+                <S name="地级行政区界线" thumbnail="png"/>
+                <S name="地质公园" thumbnail="png"/>
+                <S name="开发区、保税区界线" thumbnail="png"/>
+                <S name="森林公园" thumbnail="png"/>
+                <S name="特别行政区界线" thumbnail="png"/>
+                <S name="省界" thumbnail="png"/>
+                <S name="自然文化保护区界线" thumbnail="png"/>
+                <S name="自然文化遗产" thumbnail="png"/>
+                <S name="风景名胜区" thumbnail="png"/>
+            </C3>
+            <C3 name="铁路与道路">
+                <S name="主干道" thumbnail="png"/>
+                <S name="乡村道路" thumbnail="png"/>
+                <S name="其他专用公路" thumbnail="png"/>
+                <S name="国道" thumbnail="png"/>
+                <S name="地铁" thumbnail="png"/>
+                <S name="地面轨道" thumbnail="png"/>
+                <S name="普通铁路" thumbnail="png"/>
+                <S name="次干道" thumbnail="png"/>
+                <S name="省道" thumbnail="png"/>
+                <S name="高速公路与快速路" thumbnail="png"/>
+                <S name="高速铁路" thumbnail="png"/>
+            </C3>
+        </C2>
+    </C1>
+
+    <C1 name="专题-事物（土地利用）">
+        <C2 name="交通运输用地">
+            <S name="公路用地" thumbnail="png"/>
+            <S name="农村道路" thumbnail="png"/>
+            <S name="巷口码头用地" thumbnail="png"/>
+            <S name="机场用地" thumbnail="png"/>
+            <S name="管道运输用地" thumbnail="png"/>
+            <S name="街巷用地" thumbnail="png"/>
+            <S name="铁路用地" thumbnail="png"/>
+        </C2>
+        <C2 name="住宅用地">
+            <S name="农村宅基地" thumbnail="png"/>
+            <S name="城镇住宅用地" thumbnail="png"/>
+        </C2>
+        <C2 name="公共管理与公共服务用地">
+            <S name="公共设施用地" thumbnail="png"/>
+            <S name="公园与绿地用地" thumbnail="png"/>
+            <S name="医卫慈善用地" thumbnail="png"/>
+            <S name="文体娱乐用地" thumbnail="png"/>
+            <S name="新闻出版用地" thumbnail="png"/>
+            <S name="机关团体用地" thumbnail="png"/>
+            <S name="科教用地" thumbnail="png"/>
+            <S name="风景名胜设施用地" thumbnail="png"/>
+        </C2>
+        <C2 name="其他用地">
+            <S name="沙地" thumbnail="png"/>
+            <S name="沼泽地" thumbnail="png"/>
+            <S name="田坎" thumbnail="png"/>
+            <S name="盐碱地" thumbnail="png"/>
+            <S name="空闲地" thumbnail="png"/>
+            <S name="裸地" thumbnail="png"/>
+            <S name="设施农用地" thumbnail="png"/>
+        </C2>
+        <C2 name="商服用地">
+            <S name="住宿餐饮用地" thumbnail="png"/>
+            <S name="其他商服用地" thumbnail="png"/>
+            <S name="商务金融用地" thumbnail="png"/>
+            <S name="批发零售用地" thumbnail="png"/>
+        </C2>
+        <C2 name="园地">
+            <S name="其他园地" thumbnail="png"/>
+            <S name="果园" thumbnail="png"/>
+            <S name="茶园" thumbnail="png"/>
+        </C2>
+        <C2 name="城镇村及工矿用地">
+            <S name="城市" thumbnail="png"/>
+            <S name="建制镇" thumbnail="png"/>
+            <S name="村庄" thumbnail="png"/>
+            <S name="风景名胜及特殊用地" thumbnail="png"/>
+        </C2>
+        <C2 name="工矿仓储用地">
+            <S name="仓储用地" thumbnail="png"/>
+            <S name="工业用地" thumbnail="png"/>
+            <S name="采矿用地" thumbnail="png"/>
+        </C2>
+        <C2 name="林地">
+            <S name="其他林地" thumbnail="png"/>
+            <S name="有林地" thumbnail="png"/>
+            <S name="灌木林地" thumbnail="png"/>
+        </C2>
+        <C2 name="水域及水利设施用地">
+            <S name="内陆滩涂" thumbnail="png"/>
+            <S name="冰川及永久积雪用地" thumbnail="png"/>
+            <S name="坑塘水面" thumbnail="png"/>
+            <S name="水工建筑用地" thumbnail="png"/>
+            <S name="水库水面" thumbnail="png"/>
+            <S name="沟渠" thumbnail="png"/>
+            <S name="河流水面" thumbnail="png"/>
+            <S name="沿海滩涂" thumbnail="png"/>
+            <S name="湖泊水面" thumbnail="png"/>
+        </C2>
+        <C2 name="特殊用地">
+            <S name="使领馆用地" thumbnail="png"/>
+            <S name="军事设施用地" thumbnail="png"/>
+            <S name="宗教用地" thumbnail="png"/>
+            <S name="殡葬用地" thumbnail="png"/>
+            <S name="监教场所用地" thumbnail="png"/>
+        </C2>
+        <C2 name="耕地">
+            <S name="旱地" thumbnail="png"/>
+            <S name="水浇地" thumbnail="png"/>
+            <S name="水田" thumbnail="png"/>
+        </C2>
+        <C2 name="草地">
+            <S name="人工牧草地" thumbnail="png"/>
+            <S name="其他草地" thumbnail="png"/>
+            <S name="天然牧草地" thumbnail="png"/>
+        </C2>
+    </C1>
+
+    <C1 name="专题-事物（遥感地质）">
+        <C2 name="地质灾害">
+            <C3 name="点状事物">
+                <S name="中型崩塌" thumbnail="png"/>
+                <S name="大型崩塌" thumbnail="png"/>
+                <S name="小型崩塌" thumbnail="png"/>
+                <S name="巨型崩塌" thumbnail="png"/>
+                <S name="特大型崩塌" thumbnail="png"/>
+            </C3>
+        </C2>
+        <C2 name="基础地质环境">
+            <S name="三角洲湿地" thumbnail="png"/>
+            <S name="中度水蚀荒漠化" thumbnail="png"/>
+            <S name="中度沙质荒漠化" thumbnail="png"/>
+            <S name="中度盐碱荒漠化" thumbnail="png"/>
+            <S name="中度石漠化" thumbnail="png"/>
+            <S name="人工养殖场" thumbnail="png"/>
+            <S name="内陆盐沼" thumbnail="png"/>
+            <S name="冰川减少区" thumbnail="png"/>
+            <S name="冰川增加区" thumbnail="png"/>
+            <S name="减轻区" thumbnail="png"/>
+            <S name="加重区" thumbnail="png"/>
+            <S name="地热湿地" thumbnail="png"/>
+            <S name="季节性咸水湖" thumbnail="png"/>
+            <S name="季节性淡水湖" thumbnail="png"/>
+            <S name="岩溶石山区" thumbnail="png"/>
+            <S name="岩滩" thumbnail="png"/>
+            <S name="工矿型荒漠化" thumbnail="png"/>
+            <S name="工矿石漠化" thumbnail="png"/>
+            <S name="库塘" thumbnail="png"/>
+            <S name="森林沼泽" thumbnail="png"/>
+            <S name="水蚀荒漠化一般减轻" thumbnail="png"/>
+            <S name="水蚀荒漠化一般加重" thumbnail="png"/>
+            <S name="水蚀荒漠化明显减轻" thumbnail="png"/>
+            <S name="水蚀荒漠化明显加重" thumbnail="png"/>
+            <S name="水蚀荒漠化稳定" thumbnail="png"/>
+            <S name="永久性咸水湖" thumbnail="png"/>
+            <S name="永久性淡水湖" thumbnail="png"/>
+            <S name="永久河流" thumbnail="png"/>
+            <S name="沙滩" thumbnail="png"/>
+            <S name="沙漠" thumbnail="png"/>
+            <S name="沙质荒漠化一般减轻" thumbnail="png"/>
+            <S name="沙质荒漠化一般加重" thumbnail="png"/>
+            <S name="沙质荒漠化明显减轻" thumbnail="png"/>
+            <S name="沙质荒漠化明显加重" thumbnail="png"/>
+            <S name="沙质荒漠化稳定" thumbnail="png"/>
+            <S name="河口水域" thumbnail="png"/>
+            <S name="河流水域" thumbnail="png"/>
+            <S name="河湖湿地减少" thumbnail="png"/>
+            <S name="河湖湿地基本不变" thumbnail="png"/>
+            <S name="河湖湿地增加" thumbnail="png"/>
+            <S name="河湖湿地类型变化" thumbnail="png"/>
+            <S name="河滩" thumbnail="png"/>
+            <S name="沼泽化草甸" thumbnail="png"/>
+            <S name="泛洪平原湿地" thumbnail="png"/>
+            <S name="泥滩" thumbnail="png"/>
+            <S name="浅海水域" thumbnail="png"/>
+            <S name="海岸性咸水湖" thumbnail="png"/>
+            <S name="海岸性淡水湖" thumbnail="png"/>
+            <S name="淡水泉和绿洲" thumbnail="png"/>
+            <S name="湖泊" thumbnail="png"/>
+            <S name="湖滩" thumbnail="png"/>
+            <S name="潮下水生层" thumbnail="png"/>
+            <S name="潮间盐水沼泽" thumbnail="png"/>
+            <S name="灌丛沼泽" thumbnail="png"/>
+            <S name="现代冰川" thumbnail="png"/>
+            <S name="珊瑚礁" thumbnail="png"/>
+            <S name="盐碱荒漠化一般减轻" thumbnail="png"/>
+            <S name="盐碱荒漠化一般加重" thumbnail="png"/>
+            <S name="盐碱荒漠化明显减轻" thumbnail="png"/>
+            <S name="盐碱荒漠化稳定" thumbnail="png"/>
+            <S name="盐碱荒漠明显加重" thumbnail="png"/>
+            <S name="盐碱质荒漠化" thumbnail="png"/>
+            <S name="石漠化一般恶化" thumbnail="png"/>
+            <S name="石漠化一般改善" thumbnail="png"/>
+            <S name="石漠化基本未变" thumbnail="png"/>
+            <S name="石漠化明显恶化" thumbnail="png"/>
+            <S name="石漠化明显改善" thumbnail="png"/>
+            <S name="砾漠" thumbnail="png"/>
+            <S name="稳定区" thumbnail="png"/>
+            <S name="红树林沼泽" thumbnail="png"/>
+            <S name="草本沼泽" thumbnail="png"/>
+            <S name="藓类沼泽" thumbnail="png"/>
+            <S name="轻度水蚀荒漠化" thumbnail="png"/>
+            <S name="轻度沙质荒漠化" thumbnail="png"/>
+            <S name="轻度盐碱质荒漠化" thumbnail="png"/>
+            <S name="轻度石漠化" thumbnail="png"/>
+            <S name="重度水蚀荒漠化" thumbnail="png"/>
+            <S name="重度沙质荒漠化" thumbnail="png"/>
+            <S name="重度盐碱荒漠化" thumbnail="png"/>
+            <S name="重度石漠化" thumbnail="png"/>
+            <S name="间歇性河流" thumbnail="png"/>
+        </C2>
+        <C2 name="成矿预测区">
+            <S name="A级预测区" thumbnail="png"/>
+            <S name="B级预测区" thumbnail="png"/>
+            <S name="C级预测区" thumbnail="png"/>
+        </C2>
+        <C2 name="构造图例">
+            <S name="已知断裂" thumbnail="png"/>
+            <S name="推断构造" thumbnail="png"/>
+            <S name="环形影像" thumbnail="png"/>
+            <S name="环形构造" thumbnail="png"/>
+            <S name="遥感解译断层" thumbnail="png"/>
+        </C2>
+        <C2 name="第四系堆积物符号（中小比例尺）">
+            <S name="冰水堆积" thumbnail="png"/>
+            <S name="冲洪积" thumbnail="png"/>
+            <S name="冲积" thumbnail="png"/>
+            <S name="化学堆积" thumbnail="png"/>
+            <S name="坡积" thumbnail="png"/>
+            <S name="残坡积" thumbnail="png"/>
+            <S name="残积" thumbnail="png"/>
+            <S name="洪积" thumbnail="png"/>
+            <S name="海积" thumbnail="png"/>
+            <S name="湖积" thumbnail="png"/>
+            <S name="火山堆积" thumbnail="png"/>
+            <S name="生物堆积" thumbnail="png"/>
+            <S name="风积" thumbnail="png"/>
+        </C2>
+        <C2 name="第四系堆积物符号（大比例尺）">
+            <S name="冰水堆积" thumbnail="png"/>
+            <S name="冲沼堆积" thumbnail="png"/>
+            <S name="冲洪积" thumbnail="png"/>
+            <S name="冲积" thumbnail="png"/>
+            <S name="化学堆积" thumbnail="png"/>
+            <S name="坡积" thumbnail="png"/>
+            <S name="残坡积" thumbnail="png"/>
+            <S name="残积" thumbnail="png"/>
+            <S name="沼泽堆积" thumbnail="png"/>
+            <S name="洪积" thumbnail="png"/>
+            <S name="海积" thumbnail="png"/>
+            <S name="湖积" thumbnail="png"/>
+            <S name="火山堆积" thumbnail="png"/>
+            <S name="生物堆积" thumbnail="png"/>
+            <S name="风积" thumbnail="png"/>
+        </C2>
+        <C2 name="遥感地质符号">
+            <S name="一般区" thumbnail="png"/>
+            <S name="一般防治区" thumbnail="png"/>
+            <S name="一般防治点" thumbnail="png"/>
+            <S name="不活动滑坡" thumbnail="png"/>
+            <S name="不稳定斜坡区域" thumbnail="png"/>
+            <S name="严重区" thumbnail="png"/>
+            <S name="中型不稳定斜坡" thumbnail="png"/>
+            <S name="中型地裂缝" thumbnail="png"/>
+            <S name="中型地面塌陷" thumbnail="png"/>
+            <S name="中型泥石流" thumbnail="png"/>
+            <S name="中型滑坡" thumbnail="png"/>
+            <S name="中期防治点" thumbnail="png"/>
+            <S name="中转场地（利用）" thumbnail="png"/>
+            <S name="中转场地（废弃）" thumbnail="png"/>
+            <S name="人工扰动" thumbnail="png"/>
+            <S name="停采或闭坑矿产（原有）" thumbnail="png"/>
+            <S name="停采或闭坑矿产（新增）" thumbnail="png"/>
+            <S name="全淹没" thumbnail="png"/>
+            <S name="农用地变矿山" thumbnail="png"/>
+            <S name="危险分区" thumbnail="png"/>
+            <S name="固体废弃物（利用）" thumbnail="png"/>
+            <S name="固体废弃物（废弃）" thumbnail="png"/>
+            <S name="国家规划矿区" thumbnail="png"/>
+            <S name="地裂缝" thumbnail="png"/>
+            <S name="地质灾害不易发" thumbnail="png"/>
+            <S name="地质灾害中危险区" thumbnail="png"/>
+            <S name="地质灾害中易发" thumbnail="png"/>
+            <S name="地质灾害低危险区" thumbnail="png"/>
+            <S name="地质灾害低易发" thumbnail="png"/>
+            <S name="地质灾害体" thumbnail="png"/>
+            <S name="地质灾害勘察点" thumbnail="png"/>
+            <S name="地质灾害基本未变点" thumbnail="png"/>
+            <S name="地质灾害调查点" thumbnail="png"/>
+            <S name="地质灾害遥感解译点" thumbnail="png"/>
+            <S name="地质灾害高危险区" thumbnail="png"/>
+            <S name="地质灾害高易发" thumbnail="png"/>
+            <S name="地质环境调查点" thumbnail="png"/>
+            <S name="地质环境遥感解译点" thumbnail="png"/>
+            <S name="地质遗迹保护区" thumbnail="png"/>
+            <S name="地震烈度区域" thumbnail="png"/>
+            <S name="堵河隐患点" thumbnail="png"/>
+            <S name="塌岸" thumbnail="png"/>
+            <S name="塌陷治理点" thumbnail="png"/>
+            <S name="大型不稳定斜坡" thumbnail="png"/>
+            <S name="大型地裂缝" thumbnail="png"/>
+            <S name="大型地面塌陷" thumbnail="png"/>
+            <S name="大型崩塌" thumbnail="png"/>
+            <S name="大型泥石流" thumbnail="png"/>
+            <S name="大型滑坡" thumbnail="png"/>
+            <S name="小型不稳定斜坡" thumbnail="png"/>
+            <S name="小型地裂缝" thumbnail="png"/>
+            <S name="小型地面塌陷" thumbnail="png"/>
+            <S name="小型崩塌" thumbnail="png"/>
+            <S name="小型泥石流" thumbnail="png"/>
+            <S name="小型滑坡" thumbnail="png"/>
+            <S name="尾矿沙（利用）" thumbnail="png"/>
+            <S name="尾矿沙（废弃）" thumbnail="png"/>
+            <S name="尾矿泥（利用）" thumbnail="png"/>
+            <S name="尾矿泥（废弃）" thumbnail="png"/>
+            <S name="崩塌堆积方位" thumbnail="png"/>
+            <S name="工程地质岩组" thumbnail="png"/>
+            <S name="巨型不稳定斜坡" thumbnail="png"/>
+            <S name="巨型地裂缝" thumbnail="png"/>
+            <S name="巨型地面塌陷" thumbnail="png"/>
+            <S name="巨型崩塌" thumbnail="png"/>
+            <S name="巨型泥石流" thumbnail="png"/>
+            <S name="巨型滑坡" thumbnail="png"/>
+            <S name="已利用矿产（原有）" thumbnail="png"/>
+            <S name="已利用矿产（新增）" thumbnail="png"/>
+            <S name="废石堆（利用）" thumbnail="png"/>
+            <S name="废石堆（废弃）" thumbnail="png"/>
+            <S name="建筑用地变矿山" thumbnail="png"/>
+            <S name="排土场（利用）" thumbnail="png"/>
+            <S name="排土场（废弃）" thumbnail="png"/>
+            <S name="探矿权不符合规划边界" thumbnail="png"/>
+            <S name="探矿权符合规划边界" thumbnail="png"/>
+            <S name="推测堰塞湖" thumbnail="png"/>
+            <S name="搬迁避让场址" thumbnail="png"/>
+            <S name="新增地质灾害" thumbnail="png"/>
+            <S name="易发分区" thumbnail="png"/>
+            <S name="未利用地变矿山" thumbnail="png"/>
+            <S name="未利用矿产（原有）" thumbnail="png"/>
+            <S name="未利用矿产（新增）" thumbnail="png"/>
+            <S name="次重点防治区" thumbnail="png"/>
+            <S name="次重点防治点" thumbnail="png"/>
+            <S name="死火山口" thumbnail="png"/>
+            <S name="水土流失区域" thumbnail="png"/>
+            <S name="水源保护地" thumbnail="png"/>
+            <S name="治理工程（资料收集）" thumbnail="png"/>
+            <S name="治理工程（遥感解译）" thumbnail="png"/>
+            <S name="泥石流范围" thumbnail="png"/>
+            <S name="活动滑坡" thumbnail="png"/>
+            <S name="活火山口" thumbnail="png"/>
+            <S name="溃决河段" thumbnail="png"/>
+            <S name="滑坡界线" thumbnail="png"/>
+            <S name="潜在地震危险区域" thumbnail="png"/>
+            <S name="潜在崩塌带" thumbnail="png"/>
+            <S name="潜在滑坡带" thumbnail="png"/>
+            <S name="灾害村庄" thumbnail="png"/>
+            <S name="煤矸石堆（利用）" thumbnail="png"/>
+            <S name="煤矸石堆（废弃）" thumbnail="png"/>
+            <S name="特大型崩塌" thumbnail="png"/>
+            <S name="特大型滑坡" thumbnail="png"/>
+            <S name="生态环境恢复治理区" thumbnail="png"/>
+            <S name="矿业活动用地" thumbnail="png"/>
+            <S name="矿产资源保护区" thumbnail="png"/>
+            <S name="矿区复垦点" thumbnail="png"/>
+            <S name="矿山变农用地" thumbnail="png"/>
+            <S name="矿山变建筑用地" thumbnail="png"/>
+            <S name="矿山变未利用地" thumbnail="png"/>
+            <S name="矿山变矿山" thumbnail="png"/>
+            <S name="矿山建筑（利用）" thumbnail="png"/>
+            <S name="矿山建筑（废弃）" thumbnail="png"/>
+            <S name="禁止开采区" thumbnail="png"/>
+            <S name="自然保护区" thumbnail="png"/>
+            <S name="调查线路" thumbnail="png"/>
+            <S name="较严重区" thumbnail="png"/>
+            <S name="近期防治点" thumbnail="png"/>
+            <S name="远期防治点" thumbnail="png"/>
+            <S name="部分淹没" thumbnail="png"/>
+            <S name="采场（利用）" thumbnail="png"/>
+            <S name="采场（废弃）" thumbnail="png"/>
+            <S name="采矿权不符合规划边界" thumbnail="png"/>
+            <S name="采矿权符合规划边界" thumbnail="png"/>
+            <S name="重点开采区" thumbnail="png"/>
+            <S name="重点防治区" thumbnail="png"/>
+            <S name="重点防治点" thumbnail="png"/>
+            <S name="防治规划分区" thumbnail="png"/>
+            <S name="限制开采区" thumbnail="png"/>
+            <S name="震中" thumbnail="png"/>
+            <S name="验证点及编号" thumbnail="png"/>
+            <S name="鼓励开采区" thumbnail="png"/>
+        </C2>
+        <C2 name="高光谱矿物">
+            <S name="中铝绢云母" thumbnail="png"/>
+            <S name="伊利石" thumbnail="png"/>
+            <S name="叶腊石" thumbnail="png"/>
+            <S name="地开石" thumbnail="png"/>
+            <S name="多水高岭石" thumbnail="png"/>
+            <S name="富铝绢云母" thumbnail="png"/>
+            <S name="方解石" thumbnail="png"/>
+            <S name="明矾石" thumbnail="png"/>
+            <S name="橄榄石" thumbnail="png"/>
+            <S name="滑石" thumbnail="png"/>
+            <S name="白云石" thumbnail="png"/>
+            <S name="石膏" thumbnail="png"/>
+            <S name="石英" thumbnail="png"/>
+            <S name="绿帘石" thumbnail="png"/>
+            <S name="绿泥石" thumbnail="png"/>
+            <S name="芒硝" thumbnail="png"/>
+            <S name="菱铁矿" thumbnail="png"/>
+            <S name="蒙脱石" thumbnail="png"/>
+            <S name="蛇纹石" thumbnail="png"/>
+            <S name="褐铁矿" thumbnail="png"/>
+            <S name="角闪石" thumbnail="png"/>
+            <S name="贫铝绢云母" thumbnail="png"/>
+            <S name="赤铁矿" thumbnail="png"/>
+            <S name="透辉石" thumbnail="png"/>
+            <S name="透闪石" thumbnail="png"/>
+            <S name="针铁矿" thumbnail="png"/>
+            <S name="阳起石" thumbnail="png"/>
+            <S name="高岭石" thumbnail="png"/>
+            <S name="黄钾铁矾" thumbnail="png"/>
+            <S name="黑云母" thumbnail="png"/>
+        </C2>
+        <C2 name="遥感蚀变异常">
+            <S name="Al-OH一级异常" thumbnail="png"/>
+            <S name="Al-OH三级异常" thumbnail="png"/>
+            <S name="Al-OH二级异常" thumbnail="png"/>
+            <S name="Fe2+Fe3+混合一级异常" thumbnail="png"/>
+            <S name="Fe2+Fe3+混合二级异常" thumbnail="png"/>
+            <S name="Fe2+一级异常" thumbnail="png"/>
+            <S name="Fe2+三级异常" thumbnail="png"/>
+            <S name="Fe2+二级异常" thumbnail="png"/>
+            <S name="Fe2.1异常" thumbnail="png"/>
+            <S name="Fe3+一级异常" thumbnail="png"/>
+            <S name="Fe3+三级异常" thumbnail="png"/>
+            <S name="Fe3+二级异常" thumbnail="png"/>
+            <S name="Fe4.3异常" thumbnail="png"/>
+            <S name="Fe5.3异常" thumbnail="png"/>
+            <S name="Fe5.4异常" thumbnail="png"/>
+            <S name="III级异常" thumbnail="png"/>
+            <S name="II级异常" thumbnail="png"/>
+            <S name="I级异常" thumbnail="png"/>
+            <S name="Mg-OH一级异常" thumbnail="png"/>
+            <S name="Mg-OH三级异常" thumbnail="png"/>
+            <S name="Mg-OH二级异常" thumbnail="png"/>
+            <S name="中阈值级羟基蚀变遥感异常" thumbnail="png"/>
+            <S name="中阈值级铁染蚀变遥感异常" thumbnail="png"/>
+            <S name="低阈值级羟基蚀变遥感异常" thumbnail="png"/>
+            <S name="低阈值级铁染蚀变遥感异常" thumbnail="png"/>
+            <S name="高阈值级羟基蚀变遥感异常" thumbnail="png"/>
+            <S name="高阈值级铁染蚀变遥感异常" thumbnail="png"/>
+        </C2>
+    </C1>
+    
+    <C1 name="传感器">
+        <C2 name="物理量传感器">
+            <C3 name="光（学量）传感器">
+                <C4 name="照度传感器">
+                    <S name="光伏式照度传感器" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="力学量传感器">
+                <C4 name="位移传感器">
+                    <S name="差动变压器式位移传感器" thumbnail="png"/>
+                </C4>
+                <C4 name="位置传感器">
+                    <C5 name="物位传感器">
+                        <S name="电阻式物位传感器" thumbnail="png"/>
+                    </C5>
+                </C4>
+                <C4 name="力传感器">
+                    <S name="力传感器（总）" thumbnail="png"/>
+                    <S name="应变计式力传感器" thumbnail="png"/>
+                    <S name="电磁式力传感器" thumbnail="png"/>
+                    <S name="磁致伸缩式力传感器" thumbnail="png"/>
+                </C4>
+                <C4 name="力矩传感器">
+                    <S name="力矩传感器" thumbnail="png"/>
+                    <S name="应变计式力矩传感器" thumbnail="png"/>
+                </C4>
+                <C4 name="加速度传感器">
+                    <C5 name="（线性）加速度传感器">
+                        <S name="压电式加速度传感器" thumbnail="png"/>
+                        <S name="电容式加速度传感器" thumbnail="png"/>
+                    </C5>
+                </C4>
+                <C4 name="压力传感器">
+                    <S name="压力传感器（总）" thumbnail="png"/>
+                    <C5 name="压力类型">
+                        <S name="差压传感器" thumbnail="png"/>
+                    </C5>
+                    <C5 name="转换元件类型">
+                        <S name="伺服式压力传感器" thumbnail="png"/>
+                        <S name="光纤式压力传感器" thumbnail="png"/>
+                        <S name="压电式压力传感器" thumbnail="png"/>
+                        <S name="压阻式压力传感器" thumbnail="png"/>
+                        <S name="应变计式压力传感器" thumbnail="png"/>
+                        <S name="电位器式压力传感器" thumbnail="png"/>
+                        <S name="电容式压力传感器" thumbnail="png"/>
+                        <S name="电感式压力传感器" thumbnail="png"/>
+                        <S name="电阻式压力传感器" thumbnail="png"/>
+                        <S name="磁阻式压力传感器" thumbnail="png"/>
+                        <S name="谐振式压力传感器" thumbnail="png"/>
+                        <S name="霍尔式压力传感器" thumbnail="png"/>
+                        <S name="（差动）变压器式压力传感器" thumbnail="png"/>
+                    </C5>
+                </C4>
+                <C4 name="密度传感器">
+                    <S name="压电式密度传感器" thumbnail="png"/>
+                </C4>
+                <C4 name="尺度传感器">
+                    <C5 name="厚度传感器">
+                        <S name="超声波式厚度传感器" thumbnail="png"/>
+                    </C5>
+                </C4>
+                <C4 name="流量传感器">
+                    <C5 name="转换元件类型">
+                        <S name="浮子流量传感器" thumbnail="png"/>
+                        <S name="涡轮式流量传感器" thumbnail="png"/>
+                        <S name="激光流量传感器" thumbnail="png"/>
+                        <S name="转子流量传感器" thumbnail="png"/>
+                    </C5>
+                </C4>
+                <C4 name="速度传感器">
+                    <C5 name="角速度传感器（陀螺仪）">
+                        <S name="电磁式角速度传感器" thumbnail="png"/>
+                        <S name="角速度传感器（陀螺仪）（总）" thumbnail="png"/>
+                    </C5>
+                    <C5 name="转速传感器">
+                        <S name="光电式转速传感器" thumbnail="png"/>
+                    </C5>
+                </C4>
+                <C4 name="重力传感器">
+                    <S name="应变计式重力传感器" thumbnail="png"/>
+                    <S name="重力传感器" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="声学量传感器">
+                <C4 name="其他声学量传感器">
+                    <S name="声表面波传感器" thumbnail="png"/>
+                </C4>
+                <C4 name="声强传感器">
+                    <S name="声强传感器（总）" thumbnail="png"/>
+                    <S name="电容式声强传感器" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="热学量传感器">
+                <C4 name="温度传感器">
+                    <S name="单结温度传感器" thumbnail="png"/>
+                    <S name="双金属温度传感器" thumbnail="png"/>
+                    <S name="热电式温度传感器" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="磁（学量）传感器">
+                <C4 name="磁场（磁强）传感器">
+                    <S name="光纤磁场强度传感器" thumbnail="png"/>
+                </C4>
+            </C3>
+        </C2>
+    </C1>
+
+    <C1 name="仪器仪表">
+        <C2 name="通用仪器仪表">
+            <C3 name="供应用仪表及其它通用仪器仪表"/>
+            <C3 name="实验室仪器">
+                <S name="天平" thumbnail="png"/>
+                <S name="气压计" thumbnail="jpg"/>
+                <S name="流量仪表" thumbnail="gif"/>
+                <S name="温度计" thumbnail="png"/>
+                <S name="湿度计" thumbnail="jpg"/>
+            </C3>
+            <C3 name="工业自动化仪表">
+                <S name="数控系统" thumbnail="jpg"/>
+            </C3>
+            <C3 name="电工仪器仪表">
+                <S name="交直流电测量仪器" thumbnail="jpg"/>
+                <S name="数字万用表" thumbnail="jpg"/>
+                <S name="电压表" thumbnail="jpg"/>
+                <S name="电流表" thumbnail="jpg"/>
+            </C3>
+            <C3 name="绘图、计算及测量仪器">
+                <S name="卡尺" thumbnail="jpg"/>
+                <S name="圆规" thumbnail="jpg"/>
+                <S name="绘图板" thumbnail="jpg"/>
+                <S name="量角器" thumbnail="jpg"/>
+            </C3>
+        </C2>
+        <C2 name="专用仪器仪表">
+            <C3 name="其他专用仪器">
+                <S name="建筑工程仪器" thumbnail="jpg"/>
+                <S name="纺织专用仪器" thumbnail="jpg"/>
+            </C3>
+            <C3 name="地质勘探和地震专用仪器">
+                <S name="测震仪器" thumbnail="png"/>
+                <S name="钻探测井仪器" thumbnail="png"/>
+            </C3>
+            <C3 name="导航、气象及海洋专用仪器">
+                <S name="天文仪器" thumbnail="png"/>
+                <S name="定向罗盘" thumbnail="png"/>
+                <S name="导航设备" thumbnail="png"/>
+                <S name="经纬仪" thumbnail="jpg"/>
+                <S name="遥感设备" thumbnail="jpg"/>
+            </C3>
+            <C3 name="核子及核辐射测量仪器">
+                <S name="核辐射探头" thumbnail="jpg"/>
+            </C3>
+            <C3 name="汽车及其他计数仪表">
+                <S name="出租车计价器" thumbnail="jpg"/>
+                <S name="计步器" thumbnail="jpg"/>
+                <S name="速度测量仪表" thumbnail="jpg"/>
+            </C3>
+            <C3 name="环境监测专用仪器仪表">
+                <S name="噪声监测仪器" thumbnail="jpg"/>
+                <S name="放射性污染监测仪器" thumbnail="jpg"/>
+                <S name="水污染检测仪器" thumbnail="jpg"/>
+                <S name="空气污染监测仪器" thumbnail="png"/>
+            </C3>
+            <C3 name="电子测量仪器">
+                <S name="声学测量仪器" thumbnail="jpg"/>
+                <S name="示波器" thumbnail="jpg"/>
+                <S name="频率测量仪器" thumbnail="jpg"/>
+            </C3>
+        </C2>
+        <C2 name="其它仪器仪表">
+            <C3 name="光学仪器">
+                <S name="单筒望远镜" thumbnail="png"/>
+                <S name="双筒望远镜" thumbnail="png"/>
+                <S name="放大镜" thumbnail="png"/>
+                <S name="显微镜" thumbnail="png"/>
+                <S name="棱镜" thumbnail="jpg"/>
+            </C3>
+            <C3 name="衡器">
+                <S name="体重秤" thumbnail="jpg"/>
+                <S name="砝码" thumbnail="png"/>
+                <S name="称" thumbnail="png"/>
+                <S name="计价秤" thumbnail="jpg"/>
+            </C3>
+            <C3 name="钟表与计时仪器">
+                <S name="表" thumbnail="png"/>
+                <S name="计时器" thumbnail="jpg"/>
+                <S name="钟" thumbnail="png"/>
+            </C3>
+        </C2>       
+    </C1>
+
+    <C1 name="家电">
+        <C2 name="传统家电">
+            <S name="电暖片" thumbnail="PNG"/>
+            <S name="电脑" thumbnail="PNG"/>
+            <S name="电话机" thumbnail="PNG"/>
+            <S name="电闸" thumbnail="PNG"/>
+            <S name="电风扇" thumbnail="PNG"/>
+            <S name="空调" thumbnail="PNG"/>
+        </C2>
+        <C2 name="厨房电器">
+            <S name="微波炉" thumbnail="PNG"/>
+            <S name="电冰箱" thumbnail="PNG"/>
+        </C2>
+        <C2 name="小家电">
+            <S name="收音机" thumbnail="PNG"/>
+            <S name="照相机" thumbnail="PNG"/>
+            <S name="随身听" thumbnail="PNG"/>
+            <S name="音箱" thumbnail="PNG"/>
+        </C2>
+        <C2 name="影音家电">
+            <S name="DVD机" thumbnail="PNG"/>
+            <S name="电吉他" thumbnail="PNG"/>
+            <S name="电视机" thumbnail="PNG"/>
+            <S name="音响系统" thumbnail="PNG"/>
+        </C2>
+        <C2 name="清洁">
+            <S name="扫地机器人" thumbnail="PNG"/>
+            <S name="空气加湿器" thumbnail="PNG"/>
+        </C2>
+        <C2 name="运动健身">
+            <S name="跑步机" thumbnail="PNG"/>
+        </C2>
+    </C1>
+
+    <C1 name="基础地理要素">
+        <S name="专用公路" thumbnail="png"/>
+        <S name="主干道" thumbnail="png"/>
+        <S name="乡道" thumbnail="png"/>
+        <C2 name="交通">
+            <C3 name="城市道路">
+                <C4 name="街道">
+                    <S name="主干道" thumbnail="png"/>
+                    <S name="次干道" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="城际公路">
+                <S name="专用公路" thumbnail="png"/>
+                <S name="乡道" thumbnail="png"/>
+            </C3>
+            <C3 name="道路构造物及附属设施">
+                <S name="木桥" thumbnail="png"/>
+            </C3>
+        </C2>
+        <S name="人工绿地" thumbnail="png"/>
+        <S name="其他测量控制点" thumbnail="png"/>
+        <S name="农业及其设施" thumbnail="png"/>
+        <S name="农林用地" thumbnail="png"/>
+        <S name="医院" thumbnail="png"/>
+        <S name="卫星定位控制点" thumbnail="png"/>
+        <S name="合流管线" thumbnail="png"/>
+        <S name="垃圾桶" thumbnail="png"/>
+        <S name="基督教堂" thumbnail="png"/>
+        <S name="天文台" thumbnail="png"/>
+        <C2 name="定位符号">
+            <S name="其他测量控制点" thumbnail="png"/>
+            <S name="卫星定位控制点" thumbnail="png"/>
+            <S name="测量控制点" thumbnail="png"/>
+            <S name="高程控制点" thumbnail="png"/>
+        </C2>
+        <S name="居民地-体状" thumbnail="png"/>
+        <S name="居民地-面状" thumbnail="png"/>
+        <C2 name="居民地及附属设施">
+            <C3 name="公共服务及其设施">
+                <C4 name="文教卫生">
+                    <S name="医院" thumbnail="png"/>
+                </C4>
+                <C4 name="环卫设施">
+                    <S name="垃圾桶" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="农业及其设施">
+                <S name="农业及其设施" thumbnail="png"/>
+            </C3>
+            <C3 name="名胜古迹">
+                <C4 name="碑、像、坊、楼、亭">
+                    <S name="牌坊" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="宗教设施">
+                <S name="基督教堂" thumbnail="png"/>
+                <S name="庙宇" thumbnail="png"/>
+                <S name="教堂" thumbnail="png"/>
+                <S name="清真寺" thumbnail="png"/>
+            </C3>
+            <C3 name="居民地">
+                <C4 name="居民地">
+                    <S name="居民地-体状" thumbnail="png"/>
+                    <S name="居民地-面状" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="工矿及其设施">
+                <C4 name="地质勘测设施">
+                    <S name="探井" thumbnail="png"/>
+                </C4>
+                <C4 name="工矿企业">
+                    <S name="工矿" thumbnail="png"/>
+                </C4>
+                <S name="管道井" thumbnail="png"/>
+            </C3>
+            <C3 name="科学观测站">
+                <C4 name="科学观测台">
+                    <S name="天文台" thumbnail="png"/>
+                </C4>
+            </C3>
+        </C2>
+        <S name="工矿" thumbnail="png"/>
+        <S name="带状绿化树" thumbnail="png"/>
+        <S name="庙宇" thumbnail="png"/>
+        <S name="排水管线" thumbnail="png"/>
+        <S name="探井" thumbnail="png"/>
+        <S name="教堂" thumbnail="png"/>
+        <S name="木桥" thumbnail="png"/>
+        <C2 name="植被与土质">
+            <C3 name="农林用地">
+                <S name="农林用地" thumbnail="png"/>
+            </C3>
+            <C3 name="土质">
+                <S name="石砾地" thumbnail="png"/>
+            </C3>
+            <C3 name="城市绿地">
+                <S name="人工绿地" thumbnail="png"/>
+                <S name="带状绿化树" thumbnail="png"/>
+            </C3>
+        </C2>
+        <S name="次干道" thumbnail="png"/>
+        <S name="气管道-体状" thumbnail="png"/>
+        <S name="气管道-线状" thumbnail="png"/>
+        <S name="水管道-体状" thumbnail="png"/>
+        <S name="水管道-线状" thumbnail="png"/>
+        <C2 name="水系">
+            <C3 name="池塘">
+                <S name="池塘-点状" thumbnail="png"/>
+                <S name="池塘-面状" thumbnail="png"/>
+            </C3>
+            <C3 name="湖泊">
+                <S name="湖泊-点状" thumbnail="png"/>
+                <S name="湖泊-面状" thumbnail="png"/>
+            </C3>
+        </C2>
+        <S name="池塘-点状" thumbnail="png"/>
+        <S name="池塘-面状" thumbnail="png"/>
+        <S name="污水管线" thumbnail="png"/>
+        <S name="油管道-体状" thumbnail="png"/>
+        <S name="油管道-线状" thumbnail="png"/>
+        <S name="测量控制点" thumbnail="png"/>
+        <S name="清真寺" thumbnail="png"/>
+        <S name="湖泊-点状" thumbnail="png"/>
+        <S name="湖泊-面状" thumbnail="png"/>
+        <S name="牌坊" thumbnail="png"/>
+        <S name="电信线" thumbnail="png"/>
+        <S name="电力线" thumbnail="png"/>
+        <S name="石砾地" thumbnail="png"/>
+        <C2 name="管线">
+            <C3 name="城市管线">
+                <C4 name="水管线">
+                    <S name="合流管线" thumbnail="png"/>
+                    <S name="排水管线" thumbnail="png"/>
+                    <S name="污水管线" thumbnail="png"/>
+                    <S name="给水管线" thumbnail="png"/>
+                    <S name="雨水管线" thumbnail="png"/>
+                </C4>
+                <C4 name="电管线">
+                    <S name="电信线" thumbnail="png"/>
+                    <S name="电力线" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="油、气、水输送主管道">
+                <C4 name="气管道">
+                    <S name="气管道-体状" thumbnail="png"/>
+                    <S name="气管道-线状" thumbnail="png"/>
+                </C4>
+                <C4 name="水管道">
+                    <S name="水管道-体状" thumbnail="png"/>
+                    <S name="水管道-线状" thumbnail="png"/>
+                </C4>
+                <C4 name="油管道">
+                    <S name="油管道-体状" thumbnail="png"/>
+                    <S name="油管道-线状" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="通信线">
+                <C4 name="通信线">
+                    <S name="通信线-体状" thumbnail="png"/>
+                    <S name="通信线-线状" thumbnail="png"/>
+                </C4>
+            </C3>
+        </C2>
+        <S name="管道井" thumbnail="png"/>
+        <S name="给水管线" thumbnail="png"/>
+        <S name="行道树" thumbnail="png"/>
+        <S name="输电线-体状" thumbnail="png"/>
+        <S name="输电线-线状" thumbnail="png"/>
+        <S name="通信线-体状" thumbnail="png"/>
+        <S name="通信线-线状" thumbnail="png"/>
+        <S name="雨水管线" thumbnail="png"/>
+        <S name="高程控制点" thumbnail="png"/>
+    </C1>
+
+    <C1 name="武器装备">
+        <C2 name="海洋">
+            <S name="海_其他_海警船" thumbnail="jpg"/>
+            <S name="海_航空母舰_辽宁号" thumbnail="jpg"/>
+            <S name="海_驱逐舰_伯克级" thumbnail="jpg"/>
+        </C2>
+        <C2 name="空中">
+            <S name="空_固定翼_战斗机" thumbnail="jpg"/>
+            <S name="空_固定翼_无人机" thumbnail="jpg"/>
+            <S name="空_旋翼_直9" thumbnail="jpg"/>
+        </C2>
+        <C2 name="陆地">
+            <S name="传感器_雷达_久米岛" thumbnail="jpg"/>
+            <S name="武器_导弹_AGM-84" thumbnail="jpg"/>
+            <S name="武器_导弹_SM-2" thumbnail="jpg"/>
+            <S name="武器_导弹_SM-3" thumbnail="jpg"/>
+            <S name="陆_交通工具_东风猛士" thumbnail="jpg"/>
+            <S name="陆_装甲_坦克车" thumbnail="jpg"/>
+            <S name="陆_防空_爱国者" thumbnail="jpg"/>
+        </C2>
+    </C1>
+
+    <C1 name="植物">
+        <C2 name="植物类型">
+            <C3 name="地被植物">
+                <S name="GC01_麦角菜" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC02_大蒜" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC03_艾蒿" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC04_雏菊" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC05_矢车菊" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC06_白屈菜" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC07_滨菊" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC08_偃麦草" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC09_牛筋草" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC10_天竺葵" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC11_德国洋甘菊" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC12_罂粟" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC13_车前草" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC14_一年生青草" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC15_毛茛" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC16_酢浆草" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC17_蒲公英" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC18_三叶草" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC19_荨麻" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC20_紫罗兰" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC21_樟子松" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC22_油菜" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC23_苔草" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC24_黄鹌菜" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC25_羊茅" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC26_叶黄素" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC27_水杨梅" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+                <S name="GC28_百合花" formats="xfr,mb,obj,max" thumbnail="jpg"></S>
+            </C3>
+            
+        </C2>       
+    </C1>
+
+    <C1 name="计量表">
+        <S name="煤气表" formats="skp" thumbnail="jpg"></S>
+        <S name="电表" formats="skp" thumbnail="jpg"></S>
+        <S name="流量计" formats="skp" thumbnail="jpg"></S>
+        <S name="减压阀" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表1" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表2" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表3" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表4" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表5" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表6" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表7" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表8" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表9" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表10" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表11" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表12" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表13" formats="skp" thumbnail="jpg"></S>
+        <S name="计量表14" formats="skp" thumbnail="jpg"></S>
+    </C1>
+
+    <!-- <C1 name="灯具">
+        <C2 name="室内灯具">
+            <C3 name="台灯">
+                <S name="卧室台灯" thumbnail="png"/>
+                <C4 name="工作台灯">
+                    <S name="工作台灯-二维" thumbnail="png"/>
+                    <S name="工作台灯1-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="艺术台灯">
+                    <S name="艺术台灯-二维" thumbnail="png"/>
+                    <S name="艺术台灯1-三维" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="吊灯">
+                <C4 name="单灯罩吊灯">
+                    <S name="单灯罩吊灯-三维" thumbnail="png"/>
+                    <S name="单灯罩吊灯-二维" thumbnail="png"/>
+                </C4>
+                <C4 name="多灯罩吊灯">
+                    <S name="多灯罩吊灯1-三维" thumbnail="png"/>
+                    <S name="多灯罩吊灯1-二维" thumbnail="png"/>
+                    <S name="多灯罩吊灯2-二维" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="吸顶灯">
+                <C4 name="单灯罩吸顶灯">
+                    <S name="单灯罩吸顶灯-二维" thumbnail="png"/>
+                    <S name="单灯罩吸顶灯1-三维" thumbnail="png"/>
+                    <S name="单灯罩吸顶灯2-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="多灯罩吸顶灯">
+                    <S name="多灯罩吸顶灯-二维" thumbnail="png"/>
+                    <S name="多灯罩吸顶灯1-三维" thumbnail="png"/>
+                    <S name="多灯罩吸顶灯2-三维" thumbnail="png"/>
+                    <S name="多灯罩吸顶灯3-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="嵌入式吸顶灯">
+                    <S name="嵌入式吸顶灯-二维" thumbnail="png"/>
+                    <S name="嵌入式吸顶灯1-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="条形吸顶灯">
+                    <S name="条形吸顶灯-二维" thumbnail="png"/>
+                    <S name="条形吸顶灯1-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="栅格式吸顶灯">
+                    <S name="多灯管栅格式吸顶灯-三维" thumbnail="png"/>
+                    <S name="多灯管栅格式吸顶灯-二维" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="壁灯">
+                <C4 name="玻璃灯罩壁灯">
+                    <S name="玻璃灯罩壁灯-二维" thumbnail="png"/>
+                    <S name="玻璃灯罩壁灯1-三维" thumbnail="png"/>
+                    <S name="玻璃灯罩壁灯2-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="纺织品灯罩壁灯">
+                    <S name="纺织品灯罩壁灯-二维" thumbnail="png"/>
+                    <S name="纺织品灯罩壁灯1-三维" thumbnail="png"/>
+                    <S name="纺织品灯罩壁灯2-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="金属灯罩壁灯">
+                    <S name="金属灯罩壁灯-二维" thumbnail="png"/>
+                    <S name="金属灯罩壁灯1-三维" thumbnail="png"/>
+                    <S name="金属灯罩壁灯2-三维" thumbnail="png"/>
+                    <S name="金属灯罩壁灯3-三维" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="安全照明灯">
+                <C4 name="应急灯">
+                    <S name="应急灯1-三维" thumbnail="png"/>
+                    <S name="应急灯1-二维" thumbnail="png"/>
+                </C4>
+                <C4 name="警示灯">
+                    <S name="警示灯-二维" thumbnail="png"/>
+                    <S name="警示灯1-三维" thumbnail="png"/>
+                    <S name="警示灯2-三维" thumbnail="png"/>
+                    <S name="警示灯3-三维" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="射灯">
+                <C4 name="单头射灯">
+                    <S name="单头射灯-二维" thumbnail="png"/>
+                    <S name="单头射灯1-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="多头射灯">
+                    <S name="多头射灯1-三维" thumbnail="png"/>
+                    <S name="多头射灯1-二维" thumbnail="png"/>
+                    <S name="多头射灯2-二维" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="浮标灯">
+                <S name="浮标灯-二维" thumbnail="png"/>
+            </C3>
+            <S name="灯带" thumbnail="png"/>
+            <C3 name="特殊灯种">
+                <S name="特殊灯种1-三维" thumbnail="png"/>
+                <S name="防冻灯-二维" thumbnail="png"/>
+                <S name="防爆灯-二维" thumbnail="png"/>
+            </C3>
+            <C3 name="筒灯">
+                <S name="筒灯-二维" thumbnail="png"/>
+                <S name="筒灯1-三维" thumbnail="png"/>
+            </C3>
+            <C3 name="舞台灯">
+                <C4 name="散光灯">
+                    <S name="散光灯-二维" thumbnail="png"/>
+                    <S name="散光灯1-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="聚光灯">
+                    <S name="聚光灯1-三维" thumbnail="png"/>
+                    <S name="聚光灯1-二维" thumbnail="png"/>
+                    <S name="聚光灯2-二维" thumbnail="png"/>
+                </C4>
+                <C4 name="追光灯">
+                    <S name="追光灯-二维" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="落地灯">
+                <C4 name="单头落地灯">
+                    <S name="单头落地灯-二维" thumbnail="png"/>
+                    <S name="单头落地灯1-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="双头落地灯">
+                    <S name="双头落地灯-二维" thumbnail="png"/>
+                    <S name="双头落地灯1-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="矮脚落地灯">
+                    <S name="矮脚落地灯-二维" thumbnail="png"/>
+                    <S name="矮脚落地灯1-三维" thumbnail="png"/>
+                </C4>
+            </C3>
+            <S name="起居灯" thumbnail="png"/>
+        </C2>
+        <C2 name="室外灯具">
+            <C3 name="交通灯">
+                <S name="交通灯-二维" thumbnail="png"/>
+                <S name="交通灯1-三维" thumbnail="png"/>
+            </C3>
+            <C3 name="发廊灯">
+                <S name="发廊灯-二维" thumbnail="png"/>
+            </C3>
+            <C3 name="地埋灯">
+                <S name="地埋灯-三维" thumbnail="png"/>
+                <S name="地埋灯-二维" thumbnail="png"/>
+            </C3>
+            <C3 name="墙头灯">
+                <S name="墙头灯-二维" thumbnail="png"/>
+                <S name="墙头灯1-三维" thumbnail="png"/>
+            </C3>
+            <C3 name="庭院灯">
+                <C4 name="单头庭院灯">
+                    <S name="单头庭院灯-二维" thumbnail="png"/>
+                    <S name="单头庭院灯1-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="双头庭院灯">
+                    <S name="双头庭院灯-二维" thumbnail="png"/>
+                    <S name="双头庭院灯1-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="多头庭院灯">
+                    <S name="多头庭院灯1-三维" thumbnail="png"/>
+                    <S name="多头庭院灯1-二维" thumbnail="png"/>
+                    <S name="多头庭院灯2-二维" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="投光灯">
+                <S name="投光灯-二维" thumbnail="png"/>
+            </C3>
+            <C3 name="水下灯">
+                <S name="水下灯-三维" thumbnail="png"/>
+                <S name="水下灯-二维" thumbnail="png"/>
+            </C3>
+            <C3 name="灯笼">
+                <S name="灯笼-二维" thumbnail="png"/>
+                <S name="灯笼1-三维" thumbnail="png"/>
+                <S name="灯笼2-三维" thumbnail="png"/>
+                <S name="灯笼3-三维" thumbnail="png"/>
+                <S name="灯笼4-三维" thumbnail="png"/>
+            </C3>
+            <C3 name="灯箱">
+                <S name="灯箱-二维" thumbnail="png"/>
+                <S name="灯箱1-三维" thumbnail="png"/>
+                <S name="灯箱2-三维" thumbnail="png"/>
+                <S name="灯箱3-三维" thumbnail="png"/>
+                <S name="灯箱4-三维" thumbnail="png"/>
+                <S name="灯箱5-三维" thumbnail="png"/>
+                <S name="灯箱6-三维" thumbnail="png"/>
+            </C3>
+            <C3 name="草坪灯">
+                <S name="草地灯-二维" thumbnail="png"/>
+                <S name="草地灯1-三维" thumbnail="png"/>
+            </C3>
+            <C3 name="路灯">
+                <C4 name="单头路灯">
+                    <S name="单头路灯1-三维" thumbnail="png"/>
+                    <S name="单头路灯2-三维" thumbnail="png"/>
+                    <S name="单头路灯3-三维" thumbnail="png"/>
+                    <S name="单头路灯4-三维" thumbnail="png"/>
+                    <S name="单头路灯5-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="双头路灯">
+                    <S name="双头路灯-二维" thumbnail="png"/>
+                    <S name="双头路灯1-三维" thumbnail="png"/>
+                    <S name="双头路灯2-三维" thumbnail="png"/>
+                    <S name="双头路灯3-三维" thumbnail="png"/>
+                    <S name="双头路灯4-三维" thumbnail="png"/>
+                    <S name="双头路灯5-三维" thumbnail="png"/>
+                    <S name="双头路灯6-三维" thumbnail="png"/>
+                </C4>
+                <C4 name="太阳能路灯">
+                    <S name="太阳能路灯-二维" thumbnail="png"/>
+                    <S name="太阳能路灯1-三维" thumbnail="png"/>
+                </C4>
+            </C3>
+            <C3 name="车灯">
+                <S name="车灯-二维" thumbnail="png"/>
+            </C3>
+            <C3 name="高杆灯">
+                <S name="高杆灯-二维" thumbnail="png"/>
+                <S name="高杆灯1-三维" thumbnail="png"/>
+                <S name="高杆灯2-三维" thumbnail="png"/>
+                <S name="高杆灯3-三维" thumbnail="png"/>
+            </C3>
+        </C2>
+        <C2 name="特殊灯具">
+            <S name="头戴灯" thumbnail="png"/>
+            <C3 name="帐篷灯">
+                <S name="帐篷灯-三维" thumbnail="png"/>
+                <S name="帐篷灯-二维" thumbnail="png"/>
+            </C3>
+            <S name="手术灯" thumbnail="png"/>
+            <C3 name="灯塔1">
+                <S name="灯塔1-三维" thumbnail="png"/>
+                <S name="灯塔1-二维" thumbnail="png"/>
+            </C3>
+            <S name="灯塔2" thumbnail="png"/>
+            <C3 name="花灯">
+                <S name="花灯-三维" thumbnail="png"/>
+                <S name="花灯-二维" thumbnail="png"/>
+            </C3>
+        </C2>
+    </C1>
+
+    <C1 name="通信">
+        <C2 name="室内">
+            <S name="无线网卡" thumbnail="png"/>
+            <S name="无线网卡3D" thumbnail="png"/>
+            <S name="调制解调器" thumbnail="png"/>
+            <S name="调制解调器3D" thumbnail="png"/>
+            <S name="路由器" thumbnail="png"/>
+            <S name="路由器3D" thumbnail="png"/>
+        </C2>
+        <C2 name="户外">
+            <S name="三角塔" thumbnail="png"/>
+            <S name="仿生塔" thumbnail="png"/>
+            <S name="全向天线" thumbnail="png"/>
+            <S name="全向天线3D" thumbnail="png"/>
+            <S name="单管塔" thumbnail="png"/>
+            <S name="单管塔3D" thumbnail="png"/>
+            <S name="天馈系统" thumbnail="png"/>
+            <S name="天馈系统3D" thumbnail="png"/>
+            <S name="宏基站" thumbnail="png"/>
+            <S name="宏基站3D" thumbnail="png"/>
+            <S name="定向天线" thumbnail="png"/>
+            <S name="定向天线3D" thumbnail="png"/>
+            <S name="室分天线" thumbnail="png"/>
+            <S name="微型基站" thumbnail="png"/>
+            <S name="抱杆" thumbnail="png"/>
+            <S name="抱杆3D" thumbnail="png"/>
+            <S name="拉线塔" thumbnail="png"/>
+            <S name="景观塔" thumbnail="png"/>
+            <S name="楼顶增高架" thumbnail="png"/>
+            <S name="皮基站" thumbnail="png"/>
+            <S name="美化塔" thumbnail="png"/>
+            <S name="角钢塔" thumbnail="png"/>
+            <S name="飞塔" thumbnail="png"/>
+            <S name="高压塔" thumbnail="png"/>
+            <S name="高压塔3D" thumbnail="png"/>
+        </C2>
+        <C2 name="数据">
+            <S name="基站数据" thumbnail="png"/>
+            <S name="杆塔数据" thumbnail="png"/>
+            <S name="测量报告数据" thumbnail="png"/>
+            <S name="路测扫频数据" thumbnail="jpg"/>
+        </C2>
+        <C2 name="电信管线">
+            <S name="信息网络管线" thumbnail="png"/>
+            <S name="市话管线" thumbnail="png"/>
+            <S name="广播管线" thumbnail="png"/>
+            <S name="有线电视管线" thumbnail="png"/>
+        </C2>
+        <C2 name="长输电信管线">
+            <S name="海底光缆3D" thumbnail="png"/>
+            <S name="陆地通信线" thumbnail="png"/>
+        </C2>
+    </C1>
+
+    <C1 name="电气">
+        <C2 name="建筑电气">
+            <C3 name="供配电设备">
+                <S name="互感器" thumbnail="png"/>
+                <S name="低压接触器3D" thumbnail="png"/>
+                <S name="低压控制器" thumbnail="png"/>
+                <S name="低压断路器" thumbnail="png"/>
+                <S name="低压断路器3D" thumbnail="png"/>
+                <S name="低压配电室" thumbnail="png"/>
+                <S name="发电设备" thumbnail="png"/>
+                <S name="变压器" thumbnail="png"/>
+                <S name="变压器3D" thumbnail="png"/>
+                <S name="用电设备" thumbnail="png"/>
+                <S name="用电设备3D" thumbnail="png"/>
+                <S name="电涌保护器" thumbnail="png"/>
+                <S name="电缆分接箱3D" thumbnail="png"/>
+                <S name="继电器" thumbnail="png"/>
+                <S name="继电器3D" thumbnail="png"/>
+                <S name="配电屏" thumbnail="png"/>
+                <S name="高压接触器3D（缺）" thumbnail="png"/>
+                <S name="高压负荷开关" thumbnail="png"/>
+                <S name="高压配电室" thumbnail="png"/>
+            </C3>
+            <C3 name="动力设备">
+                <S name="排风机" thumbnail="png"/>
+                <S name="空气调节设备" thumbnail="png"/>
+                <S name="空调" thumbnail="png"/>
+            </C3>
+            <C3 name="弱电设备">
+                <S name="保安监控系统" thumbnail="png"/>
+                <S name="停车场收费管理系统" thumbnail="png"/>
+                <S name="停车收费管理系统3D" thumbnail="png"/>
+                <S name="出入口控制系统" thumbnail="png"/>
+                <S name="出入口控制系统3D" thumbnail="png"/>
+                <S name="有线电视信号分配系统" thumbnail="png"/>
+                <S name="有线电视信号分配系统3D" thumbnail="png"/>
+                <S name="电话通信系统" thumbnail="png"/>
+                <S name="电话通信系统3D" thumbnail="png"/>
+                <S name="计算机局域网系统" thumbnail="png"/>
+                <S name="计算机局域网系统3D" thumbnail="png"/>
+                <S name="音乐广播系统" thumbnail="png"/>
+                <S name="音乐广播系统3D" thumbnail="png"/>
+            </C3>
+            <C3 name="运输设备">
+                <S name="电梯" thumbnail="png"/>
+            </C3>
+        </C2>
+        <C2 name="电力">
+            <C3 name="仪器仪表">
+                <S name="侦测仪3D" thumbnail="png"/>
+                <S name="兆欧标3D" thumbnail="png"/>
+                <S name="兆欧表" thumbnail="png"/>
+                <S name="分析仪" thumbnail="png"/>
+                <S name="化工仪表" thumbnail="png"/>
+                <S name="定位系统" thumbnail="png"/>
+                <S name="局部检测系统3D" thumbnail="png"/>
+                <S name="巡检仪" thumbnail="png"/>
+                <S name="应急照明灯塔" thumbnail="png"/>
+                <S name="成像仪3D" thumbnail="png"/>
+                <S name="施工维护仪器" thumbnail="png"/>
+                <S name="机械仪器" thumbnail="png"/>
+                <S name="校验仪" thumbnail="png"/>
+                <S name="检测仪" thumbnail="png"/>
+                <S name="检测仪3D" thumbnail="png"/>
+                <S name="测温仪" thumbnail="png"/>
+                <S name="测温仪3D" thumbnail="png"/>
+                <S name="测试仪" thumbnail="png"/>
+                <S name="热像仪" thumbnail="png"/>
+                <S name="电度表" thumbnail="png"/>
+                <S name="电度表3D" thumbnail="png"/>
+                <S name="电气仪表" thumbnail="png"/>
+                <S name="电气仪表3D" thumbnail="png"/>
+                <S name="电阻测试仪" thumbnail="png"/>
+                <S name="电阻测试仪3D" thumbnail="png"/>
+                <S name="电阻计" thumbnail="png"/>
+                <S name="红外热像" thumbnail="png"/>
+                <S name="红外热像3D" thumbnail="png"/>
+                <S name="避雷器" thumbnail="png"/>
+                <S name="避雷器3D" thumbnail="png"/>
+            </C3>
+            <C3 name="发电设备">
+                <S name="交流发电机" thumbnail="png"/>
+                <S name="光伏设备" thumbnail="png"/>
+                <S name="发电原料" thumbnail="png"/>
+                <S name="太阳能电池" thumbnail="png"/>
+                <S name="太阳能电池3D" thumbnail="png"/>
+                <S name="干电池" thumbnail="png"/>
+                <S name="干电池3D" thumbnail="png"/>
+                <S name="手机电池" thumbnail="png"/>
+                <S name="手机电池3D" thumbnail="png"/>
+                <S name="新能源设备" thumbnail="png"/>
+                <S name="柴油发动机3D" thumbnail="png"/>
+                <S name="核电设备" thumbnail="png"/>
+                <S name="气轮机设备" thumbnail="png"/>
+                <S name="水电设备" thumbnail="png"/>
+                <S name="汽水两用锅炉3D" thumbnail="png"/>
+                <S name="热水锅炉" thumbnail="png"/>
+                <S name="热水锅炉3D" thumbnail="png"/>
+                <S name="燃气锅炉3D" thumbnail="png"/>
+                <S name="燃油锅炉3D" thumbnail="png"/>
+                <S name="电加热锅炉3D" thumbnail="png"/>
+                <S name="直流发电机" thumbnail="png"/>
+                <S name="直流发电机3D" thumbnail="png"/>
+                <S name="纽扣电池3D" thumbnail="png"/>
+                <S name="蒸汽锅炉3D" thumbnail="png"/>
+                <S name="蓄电池3D" thumbnail="png"/>
+                <S name="锂电池" thumbnail="png"/>
+                <S name="锂电池3D" thumbnail="png"/>
+                <S name="风电设备" thumbnail="png"/>
+                <S name="风电设备3D" thumbnail="png"/>
+            </C3>
+            <C3 name="安全防护">
+                <S name="个人防护装备" thumbnail="png"/>
+                <S name="个人防护装备3D" thumbnail="png"/>
+                <S name="安全防护用具" thumbnail="png"/>
+                <S name="安全防护用具3D" thumbnail="png"/>
+                <S name="带电作业工具" thumbnail="png"/>
+                <S name="建筑消防系统" thumbnail="png"/>
+                <S name="建筑消防系统3D" thumbnail="png"/>
+                <S name="气体含量报警仪" thumbnail="png"/>
+                <S name="气体含量报警仪3D" thumbnail="png"/>
+                <S name="消防特种装备" thumbnail="png"/>
+                <S name="消防特种装备3D" thumbnail="png"/>
+                <S name="消防车" thumbnail="png"/>
+                <S name="消防车3D" thumbnail="png"/>
+                <S name="火灾报警系统" thumbnail="png"/>
+                <S name="火灾报警系统3D" thumbnail="png"/>
+                <S name="防盗用具" thumbnail="png"/>
+                <S name="防盗用具3D" thumbnail="png"/>
+            </C3>
+            <C3 name="常用工具">
+                <S name="手动工具" thumbnail="png"/>
+                <S name="手动工具3D" thumbnail="png"/>
+                <S name="气动工具" thumbnail="png"/>
+                <S name="气动工具3D" thumbnail="png"/>
+                <S name="电动工具" thumbnail="png"/>
+                <S name="电动工具3D" thumbnail="png"/>
+                <S name="线路工具" thumbnail="png"/>
+                <S name="线路工具3D" thumbnail="png"/>
+            </C3>
+            <C3 name="常用材料">
+                <S name="五金材料" thumbnail="png"/>
+                <S name="五金材料3D" thumbnail="png"/>
+                <S name="半导体材料" thumbnail="png"/>
+                <S name="导电材料" thumbnail="png"/>
+                <S name="导电材料3D" thumbnail="png"/>
+                <S name="清洁剂" thumbnail="png"/>
+                <S name="清洁剂3D" thumbnail="png"/>
+                <S name="电力工业合金材料" thumbnail="png"/>
+                <S name="电子材料" thumbnail="png"/>
+                <S name="磁性材料" thumbnail="png"/>
+                <S name="绝缘材料" thumbnail="png"/>
+                <S name="绝缘材料3D" thumbnail="png"/>
+                <S name="防静电产品" thumbnail="png"/>
+                <S name="防静电产品3D" thumbnail="png"/>
+            </C3>
+            <C3 name="机械设备">
+                <S name="基础配件" thumbnail="png"/>
+                <S name="基础配件3D" thumbnail="png"/>
+                <S name="数控装置" thumbnail="png"/>
+                <S name="数控装置3D" thumbnail="png"/>
+                <S name="焊切装备" thumbnail="png"/>
+                <S name="焊切装备3D" thumbnail="png"/>
+                <S name="生产成型设备" thumbnail="png"/>
+                <S name="起重设备" thumbnail="png"/>
+                <S name="起重设备3D" thumbnail="png"/>
+                <S name="通用机械" thumbnail="png"/>
+                <S name="通用机械3D" thumbnail="png"/>
+                <S name="金属加工机械" thumbnail="png"/>
+                <S name="金属加工机械3D" thumbnail="png"/>
+            </C3>
+            <C3 name="检测设备">
+                <S name="三相断路器" thumbnail="png"/>
+                <S name="压缩空气断路器3D" thumbnail="png"/>
+                <S name="巡检设备" thumbnail="png"/>
+                <S name="接地检测" thumbnail="png"/>
+                <S name="接地检测3D" thumbnail="png"/>
+                <S name="检修井3D" thumbnail="png"/>
+                <S name="气体检测" thumbnail="png"/>
+                <S name="气体检测3D" thumbnail="png"/>
+                <S name="油估分析" thumbnail="png"/>
+                <S name="测温设备" thumbnail="png"/>
+                <S name="测温设备3D" thumbnail="png"/>
+                <S name="测距设备" thumbnail="png"/>
+                <S name="测距设备3D" thumbnail="png"/>
+                <S name="测速设备" thumbnail="png"/>
+                <S name="电机检测" thumbnail="png"/>
+                <S name="电能检定" thumbnail="png"/>
+                <S name="真空断路器" thumbnail="png"/>
+                <S name="线路检测" thumbnail="png"/>
+                <S name="绝缘耐压" thumbnail="png"/>
+                <S name="继电保护" thumbnail="png"/>
+                <S name="继电保护3D" thumbnail="png"/>
+                <S name="负荷开关" thumbnail="png"/>
+                <S name="负荷开关3D" thumbnail="png"/>
+                <S name="避雷测试" thumbnail="png"/>
+                <S name="隔离开关" thumbnail="png"/>
+                <S name="隔离开关3D" thumbnail="png"/>
+                <S name="高压断路器" thumbnail="png"/>
+                <S name="高压断路器3D" thumbnail="png"/>
+            </C3>
+            <C3 name="环保设备">
+                <S name="LED灯具" thumbnail="png"/>
+                <S name="LED灯具3D" thumbnail="png"/>
+                <S name="LED灯饰" thumbnail="png"/>
+                <S name="LED灯饰3D" thumbnail="png"/>
+                <S name="LED路灯" thumbnail="png"/>
+                <S name="LED路灯3D" thumbnail="png"/>
+                <S name="污水处理设备" thumbnail="png"/>
+                <S name="污水处理设备3D" thumbnail="png"/>
+                <S name="环保材料及药剂" thumbnail="png"/>
+                <S name="环保材料及药剂3D" thumbnail="png"/>
+                <S name="脱硫" thumbnail="png"/>
+                <S name="节能灯具" thumbnail="png"/>
+                <S name="节能设备" thumbnail="png"/>
+                <S name="节能设备3D" thumbnail="png"/>
+                <S name="除灰除尘" thumbnail="png"/>
+                <S name="除灰除尘3D" thumbnail="png"/>
+            </C3>
+            <C3 name="生活电器">
+                <S name="光伏设备" thumbnail="png"/>
+                <S name="光纤设备" thumbnail="png"/>
+                <S name="光纤设备3D" thumbnail="png"/>
+                <S name="太阳能发电器" thumbnail="png"/>
+                <S name="太阳能发电器3D" thumbnail="png"/>
+                <S name="太阳能灯具" thumbnail="png"/>
+                <S name="太阳能灯具3D" thumbnail="png"/>
+                <S name="太阳能热水器" thumbnail="png"/>
+                <S name="太阳能热水器3D" thumbnail="png"/>
+                <S name="太阳能电池板" thumbnail="png"/>
+                <S name="太阳能电池板3D" thumbnail="png"/>
+                <S name="微波设备" thumbnail="png"/>
+                <S name="微波设备3D" thumbnail="png"/>
+                <S name="电力器材3D" thumbnail="png"/>
+                <S name="电气五金" thumbnail="png"/>
+                <S name="视频会议" thumbnail="png"/>
+                <S name="视频会议3D" thumbnail="png"/>
+                <S name="避雷器" thumbnail="png"/>
+                <S name="避雷器3D" thumbnail="png"/>
+                <S name="配线设备" thumbnail="png"/>
+            </C3>
+            <C3 name="直流系统">
+                <S name="不间断电源" thumbnail="png"/>
+                <S name="充电器" thumbnail="png"/>
+                <S name="充电器3D" thumbnail="png"/>
+                <S name="光源" thumbnail="png"/>
+                <S name="光源3D" thumbnail="png"/>
+                <S name="开关电源" thumbnail="png"/>
+                <S name="开关电源3D" thumbnail="png"/>
+                <S name="放电装置" thumbnail="png"/>
+                <S name="模块电源" thumbnail="png"/>
+                <S name="直流电源" thumbnail="png"/>
+                <S name="直流电源3D" thumbnail="png"/>
+                <S name="稳压器" thumbnail="png"/>
+                <S name="稳压器3D" thumbnail="png"/>
+            </C3>
+            <C3 name="输配电">
+                <S name="交流电动机" thumbnail="png"/>
+                <S name="交流稳压器3D" thumbnail="png"/>
+                <S name="低压输电" thumbnail="png"/>
+                <S name="充水式潜水电泵3D" thumbnail="png"/>
+                <S name="变流变压器" thumbnail="png"/>
+                <S name="变流变压器3D" thumbnail="png"/>
+                <S name="变电站3D" thumbnail="png"/>
+                <S name="变频变压器" thumbnail="png"/>
+                <S name="变频变压器3D" thumbnail="png"/>
+                <S name="同步电动机" thumbnail="png"/>
+                <S name="同步电动机3D" thumbnail="png"/>
+                <S name="开关柜" thumbnail="png"/>
+                <S name="开关柜3D" thumbnail="png"/>
+                <S name="开关箱" thumbnail="png"/>
+                <S name="开关箱3D" thumbnail="png"/>
+                <S name="异步电动机3D" thumbnail="png"/>
+                <S name="控制箱" thumbnail="png"/>
+                <S name="控制箱3D" thumbnail="png"/>
+                <S name="永磁同步电动机3D" thumbnail="png"/>
+                <S name="潜水排污电泵3D" thumbnail="png"/>
+                <S name="电力变压器3D" thumbnail="png"/>
+                <S name="电源变压器3D" thumbnail="png"/>
+                <S name="电线电缆" thumbnail="png"/>
+                <S name="电线电缆3D" thumbnail="png"/>
+                <S name="直流电动机" thumbnail="png"/>
+                <S name="直流输电" thumbnail="png"/>
+                <S name="调速电动机3D" thumbnail="png"/>
+                <S name="配电柜" thumbnail="png"/>
+                <S name="配电柜3D" thumbnail="png"/>
+                <S name="配电箱" thumbnail="png"/>
+                <S name="配电箱3D" thumbnail="png"/>
+                <S name="隔爆异步电动机3D" thumbnail="png"/>
+                <S name="高压输电" thumbnail="png"/>
+                <S name="高压输电线" thumbnail="png"/>
+            </C3>
+            <C3 name="配件">
+                <S name="变电设备配件" thumbnail="png"/>
+                <S name="变电设备配件3D" thumbnail="png"/>
+                <S name="家用电器配件" thumbnail="png"/>
+                <S name="家用电器配件3D" thumbnail="png"/>
+                <S name="输电设备配件" thumbnail="png"/>
+                <S name="配电设备配件" thumbnail="png"/>
+                <S name="配电设备配件3D" thumbnail="png"/>
+            </C3>
+        </C2>
+    </C1> -->
+</ALL>
