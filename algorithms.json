@@ -155,38 +155,6 @@
       }
     ]
   },
-    "Image.ndvi": {
-    "description": "Adds the first value to the second for each matched pair of bands in image1 and image2. If either image1 or image2 has only 1 band, then it is used against all the bands in the other image. If the images have the same number of bands, but not the same names, they're used pairwise in the natural order. The output bands are named for the longer of the two inputs, or if they're equal in length, in image1's order. The type of the output pixels is the union of the input types. ",
-    "returns": "Image<unknown bands>",
-    "args": [
-      {
-        "name": "image1",
-        "type": "Image<unknown bands>",
-        "description": "The image from which the left operand bands are taken."
-      },
-      {
-        "name": "image2",
-        "type": "Image<unknown bands>",
-        "description": "The image from which the right operand bands are taken."
-      }
-    ]
-  },
-    "Image.clip": {
-    "description": "Adds the first value to the second for each matched pair of bands in image1 and image2. If either image1 or image2 has only 1 band, then it is used against all the bands in the other image. If the images have the same number of bands, but not the same names, they're used pairwise in the natural order. The output bands are named for the longer of the two inputs, or if they're equal in length, in image1's order. The type of the output pixels is the union of the input types. ",
-    "returns": "Image<unknown bands>",
-    "args": [
-      {
-        "name": "image1",
-        "type": "Image<unknown bands>",
-        "description": "The image from which the left operand bands are taken."
-      },
-      {
-        "name": "shap1",
-        "type": "Image<unknown bands>",
-        "description": "The image from which the right operand bands are taken."
-      }
-    ]
-  },
   "Image.add": {
     "description": "Adds the first value to the second for each matched pair of bands in image1 and image2. If either image1 or image2 has only 1 band, then it is used against all the bands in the other image. If the images have the same number of bands, but not the same names, they're used pairwise in the natural order. The output bands are named for the longer of the two inputs, or if they're equal in length, in image1's order. The type of the output pixels is the union of the input types. ",
     "returns": "Image<unknown bands>",
@@ -1934,6 +1902,22 @@
       {
         "name": "coverage2",
         "type": "Coverage",
+        "description": "The image from which the right operand bands are taken."
+      }
+    ]
+  },
+     "Coverage.clip": {
+    "description": "Subtracts the second value from the first for each matched pair of bands in image1 and image2. If either image1 or image2 has only 1 band, then it is used against all the bands in the other image. If the images have the same number of bands, but not the same names, they're used pairwise in the natural order. The output bands are named for the longer of the two inputs, or if they're equal in length, in image1's order. The type of the output pixels is the union of the input types.",
+    "returns": "Coverage",
+    "args": [
+      {
+        "name": "coverage1",
+        "type": "Coverage",
+        "description": "The image from which the left operand bands are taken."
+      },
+      {
+        "name": "shap1",
+        "type": "String",
         "description": "The image from which the right operand bands are taken."
       }
     ]
