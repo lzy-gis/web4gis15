@@ -730,13 +730,29 @@
         "type": "Coverage",
         "description": "The Coverage as the input data "
       },
-	  {
-		"name": "band",
+      {
+	"name": "band",
         "type": "Int",
         "description": "If the raster is multiband, choose a band "
-	  }
+      }
     ]
   },
+ "Coverage.saveRasterRDDToTif": {
+    "description": "Get the domain set of a coverage.",
+    "returns": "Coverage",
+    "args": [
+      {
+        "name": "input",
+        "type": "Coverage",
+        "description": "The Coverage as the input data "
+      },
+      {
+	"name": "outputTiffPath",
+        "type": "String",
+        "description": "If the raster is multiband, choose a band "
+      }
+    ]
+  },	
   "Coverage.rangeSet": {
     "description": "Get the range set of a coverage.",
     "returns": "Dictionary",
