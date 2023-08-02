@@ -737,22 +737,6 @@
       }
     ]
   },
-"Coverage.surfIdwByGrass": {
-    "description": "Casts the input value to a 64-bit float.",
-    "returns": "Coverage",
-    "args": [
-      {
-        "name": "input",
-        "type": "Coverage",
-        "description": "The coverage to which the operation is applied."
-      },
-      {
-        "name": "npoints",
-        "type": "String",
-        "description": "The coverage to which the operation is applied."
-      }
-    ]
-},
  "Coverage.saveRasterRDDToTif": {
     "description": "Get the domain set of a coverage.",
     "returns": "Coverage",
