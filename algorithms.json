@@ -769,6 +769,22 @@
       }
     ]
   },	
+  "Coverage.paddingRDDImage": {
+    "description": "Get the domain set of a coverage.",
+    "returns": "Coverage",
+    "args": [
+      {
+        "name": "image",
+        "type": "Coverage",
+        "description": "The Coverage as the input data "
+      },
+      {
+	"name": "radius",
+        "type": "Int",
+        "description": "If the raster is multiband, choose a band "
+      }
+    ]
+  },	
   "Coverage.rangeSet": {
     "description": "Get the range set of a coverage.",
     "returns": "Dictionary",
