@@ -804,7 +804,7 @@
       {
         "name": "prefix",
         "type": "String",
-        "description": "Prefix to add to the new field names to avoid name collisions with fields in the input layer."
+        "description": "Prefix to add to the new field names to avoid name collisions with fields in the input layer.",
 	"optional": "True",
         "default": "None"      
       }
