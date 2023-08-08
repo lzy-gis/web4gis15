@@ -797,7 +797,7 @@
       {
         "name": "crs",
         "type": "String",
-        "description": "Coordinate reference system to use for the generated x and y fields."
+        "description": "Coordinate reference system to use for the generated x and y fields.",
 	"optional": "True",
         "default": "EPSG:4326"
       },
