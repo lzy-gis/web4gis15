@@ -784,7 +784,32 @@
         "description": "If the raster is multiband, choose a band "
       }
     ]
-  },	
+  },
+  "Feature.addXYFieldByQGIS": {
+    "description": "Adds X and Y (or latitude/longitude) fields to a point layer",
+    "returns": "Feature",
+    "args": [
+      {
+        "name": "input",
+        "type": "Feature",
+        "description": "Input vector layer"
+      },
+      {
+        "name": "crs",
+        "type": "String",
+        "description": "Coordinate reference system to use for the generated x and y fields."
+	"optional": "True",
+        "default": "EPSG:4326"
+      },
+      {
+        "name": "prefix",
+        "type": "String",
+        "description": "Prefix to add to the new field names to avoid name collisions with fields in the input layer."
+	"optional": "True",
+        "default": "None"      
+      }
+    ]
+  },
   "Coverage.rangeSet": {
     "description": "Get the range set of a coverage.",
     "returns": "Dictionary",
