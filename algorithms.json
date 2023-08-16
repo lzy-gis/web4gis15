@@ -781,7 +781,7 @@
       {
 	"name": "radius",
         "type": "Int",
-        "description": "If the raster is multiband, choose a band "
+        "description": "If the raster is multiband, choose a band ",
 	"optional": "True",
         "default": 5
       }
