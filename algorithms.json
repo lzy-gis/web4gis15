@@ -1665,6 +1665,24 @@
       }
     ]
   },
+    "Coverage.slopeByQGIS": {
+    "description": "Calculates the slope from an input raster layer.",
+    "returns": "Coverage",
+    "args": [
+      {
+        "name": "input",
+        "type": "Coverage",
+        "description": "Digital Terrain Model raster layer."
+      },
+      {
+        "name": "zFactor",
+        "type": "Double",
+        "description": "Vertical exaggeration.",
+        "optional": "True",
+        "default": 1.0
+      }
+    ]
+  },	
   "Terrain.slope": {
     "description": "Calculates slope in degrees from a terrain DEM.",
     "returns": "Coverage",
