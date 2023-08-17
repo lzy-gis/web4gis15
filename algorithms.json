@@ -4220,7 +4220,7 @@
         "default": 10
       },
       {
-        "joinStyle": "joinStyle",
+        "name": "joinStyle",
         "type": "String",
         "description": "Specifies whether round, miter or beveled joins should be used when offsetting corners in a line",
         "optional": "True",
@@ -6845,6 +6845,8 @@
   "Coverage.neighborsByGRASS": {
     "description": "Makes each cell category value a function of the category values assigned to the cells around it,and stores new cell values in an output raster map layers.",
     "returns": "Coverage",
+    "alias":"邻域分析",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -6870,6 +6872,8 @@
   "Coverage.bufferByGRASS": {
     "description": "Creates a raster map showing buffer zones surrounding cells that contain non-NULL category values.",
     "returns": "Coverage",
+    "alias":"缓冲区分析",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -6893,6 +6897,8 @@
   "Coverage.crossByGRASS": {
     "description": "Creates a cross product of the category values from multiple raster map layers.",
     "returns": "Coverage",
+    "alias":"交叉值",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -6904,6 +6910,8 @@
   "Coverage.patchByGRASS": {
     "description": "Creates a composite raster map layer by using known category values from one(or more) map layer(s) to fill in areas of 'no data' in another map layer.",
     "returns": "Coverage",
+    "alias":"填充",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -6915,6 +6923,8 @@
   "Coverage.latlongByGRASS": {
     "description": "Creates a latitude/longitude raster map.",
     "returns": "Coverage",
+    "alias":"创建经纬度栅格",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -6926,6 +6936,8 @@
   "Coverage.blendByGRASS": {
     "description": "Blends color components of two raster maps by a given ratio.",
     "returns": "Coverage",
+    "alias":"混合光栅色彩",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "first",
@@ -6949,6 +6961,8 @@
   "Coverage.compositeByGRASS": {
     "description": "Combines red, green and blue raster maps into a single composite raster map.",
     "returns": "Coverage",
+    "alias":"合并栅格",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "red",
@@ -6977,6 +6991,8 @@
   "Coverage.sunmaskByGRASS": {
     "description": "Calculates cast shadow areas from sun position and elevation raster map.",
     "returns": "Coverage",
+    "alias":"计算阴影(根据太阳位置及高程)",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "elevation",
@@ -7025,6 +7041,8 @@
   "Coverage.surfIdwByGRASS": {
     "description": "Provides surface interpolation from raster point data by Inverse Distance Squared Weighting.",
     "returns": "Coverage",
+    "alias":"空间插值(IDW)",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7043,6 +7061,8 @@
   "Coverage.rescaleByGRASS": {
     "description": "Rescales the range of category values in a raster map layer.",
     "returns": "Coverage",
+    "alias":"调整栅格比例",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7059,6 +7079,8 @@
   "Coverage.surfAreaByGRASS": {
     "description": "Prints estimation of surface area for raster map.",
     "returns": "String",
+    "alias":"计算表面积",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "map",
@@ -7077,6 +7099,8 @@
   "Coverage.statsByGRASS": {
     "description": "Generates area statistics for raster map.",
     "returns": "String",
+    "alias":"栅格统计",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7114,6 +7138,8 @@
   "Coverage.coinByGRASS": {
     "description": "Tabulates the mutual occurrence (coincidence) of categories for two raster map layers.",
     "returns": "String",
+    "alias":"重合",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "first",
@@ -7135,6 +7161,8 @@
   "Coverage.volumeByGRASS": {
     "description": "Calculates the volume of data 'clumps'.",
     "returns": "String",
+    "alias":"计算体积",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7151,6 +7179,8 @@
   "Coverage.outPNGByGRASS": {
     "description": "Export a GRASS raster map as a non-georeferenced PNG image.",
     "returns": "String",
+    "alias":"输出PNG图像",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7169,6 +7199,8 @@
   "Coverage.resampStatsByGRASS": {
     "description": "Resamples raster map layers to a coarser grid using aggregation",
     "returns": "Coverage",
+    "alias":"重采样（聚合法）",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7194,6 +7226,8 @@
   "Coverage.resampInterpByGRASS": {
     "description": "Resamples raster map to a finer grid using interpolation",
     "returns": "Coverage",
+    "alias":"重采样（插值法）",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7212,6 +7246,8 @@
   "Coverage.resampBsplineByGRASS": {
     "description": "Performs bilinear or bicubic spline interpolation with Tykhonov regularization.",
     "returns": "Coverage",
+    "alias":"样条插值",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7230,6 +7266,8 @@
   "Coverage.resampFilterByGRASS": {
     "description": "Resamples raster map layers using an analytic kernel.",
     "returns": "Coverage",
+    "alias":"重采样（分析内核）",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7251,6 +7289,8 @@
   "Coverage.textureByGRASS": {
     "description": " Generate images with textural features from a raster map.",
     "returns": "Coverage",
+    "alias":"生成栅格纹理",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7281,6 +7321,8 @@
   "Coverage.viewshedByGRASS": {
     "description": " Computes the viewshed of a point on an elevation raster map. Default format: NULL (invisible), vertical angle wrt viewpoint (visible). ",
     "returns": "Coverage",
+    "alias":"计算点视角",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7330,6 +7372,8 @@
   "Coverage.shadeByGRASS": {
     "description": "Drapes a color raster over an shaded relief or aspect map. ",
     "returns": "Coverage",
+    "alias":"生成彩色光栅",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "shade",
@@ -7353,6 +7397,8 @@
   "Coverage.packByGRASS": {
     "description": " Exports a raster map as GRASS GIS specific archive file ",
     "returns": "Coverage",
+    "alias":"导出（GRASS格式）",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7364,6 +7410,8 @@
   "Coverage.reclassByGRASS": {
     "description": "Reclassify raster map based on category values.Creates a new raster map whose category values are based upon a reclassification of the categories in an existing raster map. ",
     "returns": "Coverage",
+    "alias":"重分类",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7387,6 +7435,8 @@
   "Coverage.reportByGRASS": {
     "description": " Reports statistics for raster maps. ",
     "returns": "String",
+    "alias":"统计栅格",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "map",
@@ -7412,6 +7462,8 @@
   "Coverage.supportStatsByGRASS": {
     "description": "Update raster map statistics",
     "returns": "String",
+    "alias":"更新统计数据",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "map",
@@ -7423,6 +7475,8 @@
   "Coverage.outDdalByGRASS": {
     "description": " Exports GRASS raster maps into GDAL supported formats. ",
     "returns": "Coverage",
+    "alias":"导出（GDAL格式）",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7441,6 +7495,8 @@
   "Coverage.outBinByGRASS": {
     "description": " Exports a GRASS raster to a binary array.",
     "returns": "String",
+    "alias":"导出（二进制格式）",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7471,6 +7527,8 @@
   "Coverage.inGdalByGRASS": {
     "description": " Imports raster data into a GRASS raster map using GDAL library. ",
     "returns": "Coverage",
+    "alias":"导入",
+    "modelType":"GRASS",
     "args": [
       {
         "name": "input",
@@ -7490,3 +7548,4 @@
     ]
   }
 }
+  
