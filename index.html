@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EE Demo: Map Layers using ee.layers.ImageOverlay</title>
+    <!-- Load the Roboto font. -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  
+    <!-- Load the Google Maps API. -->
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
+    <!-- Load jQuery. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- 【关键1】加载最新的 Earth Engine JS API -->
+    <script src="https://cdn.jsdelivr.net/npm/@google/earthengine@latest/build/ee_api_js.js"></script>
+    
+    <!-- 【关键2】加载 Google Identity Services (用于登录) -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <!-- Load our styles. -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>EE Demo: Map Layers using ee.layers.ImageOverlay</h1>
+     
+    <div class="map"></div>
+
+    <!-- 【关键3】添加 Google 登录按钮容器 -->
+    <div id="g_sign_in_container" style="margin: 20px;">
+      <span>请先登录 Google 账号以使用 Earth Engine:</span>
+      <div id="buttonDiv"></div> 
+    </div>
+
+    <div class="tiles-loading"></div>
+    
+    <!-- 测试按钮，登录后点击 -->
+    <button onclick="testEE()" disabled id="testBtn">点击测试 EE (请先登录)</button>
+
+    <script>
+      var isEEReady = false;
+
+      // 1. 初始化 Google 登录
+      function handleCredentialResponse(response) {
+        console.log("Encoded JWT ID token: " + response.credential);
+        
+        // 获取 token 后，初始化 Earth Engine
+        initEarthEngine(response.credential);
+      }
+
+      window.onload = function () {
+        google.accounts.id.initialize({
+          client_id: "1012310494960-mtumvv0085al6bn7kpsp23q51lo7kdre.apps.googleusercontent.com", // 【注意】这里需要替换为你自己的 Client ID
+          callback: handleCredentialResponse
+        });
+        
+        google.accounts.id.renderButton(
+          document.getElementById("buttonDiv"),
+          { theme: "outline", size: "large" }  // 自定义按钮样式
+        );
+        
+        // 可选：自动弹出提示（某些浏览器可能拦截）
+        // google.accounts.id.prompt(); 
+      };
+
+      // 2. 使用 Token 初始化 Earth Engine
+      function initEarthEngine(token) {
+        console.log("正在初始化 Earth Engine...");
+        
+        // ee.initialize(projectId, baseUrl, successCallback, errorCallback, authToken)
+        // 注意：新版 JS API 通常会自动处理 token，如果不行，可能需要通过 gapi 或其他方式注入
+        // 对于 @google/earthengine 库，它通常依赖全局的 gauth 或自动检测
+        
+        ee.initialize(null, null, function() {
+          console.log('✅ Earth Engine 初始化成功');
+          isEEReady = true;
+          document.getElementById('testBtn').disabled = false;
+          document.getElementById('testBtn').innerText = "点击测试 EE";
+        }, function(error) {
+          console.error('❌ Earth Engine 初始化失败:', error);
+          alert('初始化失败: ' + error.message);
+        });
+      }
+
+      // 3. 测试功能
+      function testEE() {
+        if (!isEEReady) {
+          alert('Earth Engine 尚未就绪');
+          return;
+        }
+        
+        try {
+          var point = ee.Geometry.Point([114.28, 30.57]);
+          console.log('Point created:', point.toString());
+          alert('成功！请查看控制台输出:\n' + point.toString());
+        } catch (e) {
+          console.error(e);
+          alert('错误: ' + e.message);
+        }
+      }
+    </script>
+  </body>
+</html>
